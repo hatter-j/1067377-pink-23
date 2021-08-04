@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Пинк</title>
+  </head>
+  <body class="page__body">
+
+    <header class="page-header">
+      <div class="page-header__wrapper">
+        <a class="page-header__link" href="index.html">
+          <img class="page-header__logo" src="img/logo_pink_mobile.svg" width="74" height="23" alt="Пинк">
+          <!--СМЕНИТЬ ЗАЛИВКУ У SVG-->
+        </a>
+        <nav class="main-nav">
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a href="index.html">Главная</a>
+            </li>
+            <li class="main-nav__item main-nav__item--current">
+              <a>Фотографии</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="form.html">Конкурс</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#">HTML Academy</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page-main">
+
+      <h1 class="visually-hidden">Фотографии пользовталей Пинк</h1>
+
+      <section class="photos__slogan">
+        <h2 class="photos__caption">Фотографии пользователей</h2>
+        <p class="photos__description">
+          Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
+        </p>
+      </section>
+
+      <section class="photo-of-day">
+        <h2 class="visually-hidden">Панорама дня</h2>
+        <a class="photo-of-day__link" href="blank.html">
+          <img src="img/user_img/bridge.jpg" width="320" height="137" alt="Вид на мост и горы">
+        </a>
+        <a class="photo-of-day__button" href="blank.html">Панорама дня</a>
+        <div class="photo-of-day__description user-description">
+          <div class="user-description__info">
+            <span class="user-description__user-name">Анна</span>
+            <p class="user-description__user-post-time">(5 минут назад)</p>
+          </div>
+          <p class="user-description__text">
+            Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!
+          </p>
+          <div class="user-description__rating">
+            <svg width="13" height="12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.469 12a.782.782 0 0 1-.58-.25C1.958 7.42 1.036 6.44.86 6.17A3.765 3.765 0 0 1 0 3.8a3.723 3.723 0 0 1 .63-2.045A3.921 3.921 0 0 1 2.3.355 4.09 4.09 0 0 1 4.487.035 4.031 4.031 0 0 1 6.51.9 4.08 4.08 0 0 1 9.07 0a4.013 4.013 0 0 1 2.78 1.117A3.733 3.733 0 0 1 13 3.8a3.409 3.409 0 0 1-.923 2.38l-5.038 5.56a.757.757 0 0 1-.57.25V12zM2.073 5.28c.218.26 2.56 2.84 4.396 4.86l4.478-4.94a1.96 1.96 0 0 0 .539-1.4c0-.618-.254-1.21-.707-1.648A2.461 2.461 0 0 0 9.07 1.47c-.38.003-.756.09-1.097.252-.341.163-.64.398-.873.688a.844.844 0 0 1-.612.28.757.757 0 0 1-.332-.082.729.729 0 0 1-.258-.218 2.43 2.43 0 0 0-.868-.682 2.49 2.49 0 0 0-2.372.132 2.369 2.369 0 0 0-.882.968 2.267 2.267 0 0 0 .296 2.462v.01z" fill="#D22856"/></svg>
+            <p class="user-description__likes-number">
+              Нравится: 215
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="gallery">
+        <h2 class="visually-hidden">Фотографии</h2>
+        <ul class="gallery__list">
+          <li class="gallery__item">
+            <div class="gallery__photo photo-of-users">
+              <a class="photo-of-users__link" href="blank.html">
+                <img src="img/user_img/car.jpg" width="280" height="180" alt="Белая машина">
+              </a>
+            </div>
+            <div class="gallery__description user-description">
+              <div class="user-description__info">
+                <span class="user-description__user-name">Левон</span>
+                <p class="user-description__user-post-time">(5 часов назад)</p>
+              </div>
+              <p class="user-description__text">
+                Вчера он на луну летал, сегодня в руки к нам попал.
+              </p>
+              <div class="user-description__rating">
+                <svg width="13" height="12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.469 12a.782.782 0 0 1-.58-.25C1.958 7.42 1.036 6.44.86 6.17A3.765 3.765 0 0 1 0 3.8a3.723 3.723 0 0 1 .63-2.045A3.921 3.921 0 0 1 2.3.355 4.09 4.09 0 0 1 4.487.035 4.031 4.031 0 0 1 6.51.9 4.08 4.08 0 0 1 9.07 0a4.013 4.013 0 0 1 2.78 1.117A3.733 3.733 0 0 1 13 3.8a3.409 3.409 0 0 1-.923 2.38l-5.038 5.56a.757.757 0 0 1-.57.25V12zM2.073 5.28c.218.26 2.56 2.84 4.396 4.86l4.478-4.94a1.96 1.96 0 0 0 .539-1.4c0-.618-.254-1.21-.707-1.648A2.461 2.461 0 0 0 9.07 1.47c-.38.003-.756.09-1.097.252-.341.163-.64.398-.873.688a.844.844 0 0 1-.612.28.757.757 0 0 1-.332-.082.729.729 0 0 1-.258-.218 2.43 2.43 0 0 0-.868-.682 2.49 2.49 0 0 0-2.372.132 2.369 2.369 0 0 0-.882.968 2.267 2.267 0 0 0 .296 2.462v.01z"fill="#D22856" /></svg>
+                <p class="user-description__likes-number">
+                  Нравится: 356
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="gallery__item">
+            <div class="gallery__photo photo-of-users">
+              <a class="photo-of-users__link" href="blank.html">
+                <img src="img/user_img/drums.jpg" width="280" height="180" alt="Барабаны">
+              </a>
+            </div>
+            <div class="gallery__description user-description">
+              <div class="user-description__info">
+                <span class="user-description__user-name">Антон</span>
+                <p class="user-description__user-post-time">(12 часов назад)</p>
+              </div>
+              <p class="user-description__text">
+                Соседи будут рады!
+              </p>
+              <div class="user-description__rating">
+                <svg width="13" height="12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.469 12a.782.782 0 0 1-.58-.25C1.958 7.42 1.036 6.44.86 6.17A3.765 3.765 0 0 1 0 3.8a3.723 3.723 0 0 1 .63-2.045A3.921 3.921 0 0 1 2.3.355 4.09 4.09 0 0 1 4.487.035 4.031 4.031 0 0 1 6.51.9 4.08 4.08 0 0 1 9.07 0a4.013 4.013 0 0 1 2.78 1.117A3.733 3.733 0 0 1 13 3.8a3.409 3.409 0 0 1-.923 2.38l-5.038 5.56a.757.757 0 0 1-.57.25V12zM2.073 5.28c.218.26 2.56 2.84 4.396 4.86l4.478-4.94a1.96 1.96 0 0 0 .539-1.4c0-.618-.254-1.21-.707-1.648A2.461 2.461 0 0 0 9.07 1.47c-.38.003-.756.09-1.097.252-.341.163-.64.398-.873.688a.844.844 0 0 1-.612.28.757.757 0 0 1-.332-.082.729.729 0 0 1-.258-.218 2.43 2.43 0 0 0-.868-.682 2.49 2.49 0 0 0-2.372.132 2.369 2.369 0 0 0-.882.968 2.267 2.267 0 0 0 .296 2.462v.01z"fill="#D22856" /></svg>
+                <p class="user-description__likes-number">
+                  Нравится: 666
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="gallery__item">
+            <div class="gallery__photo photo-of-users">
+              <a class="photo-of-users__link" href="blank.html">
+                <img src="img/user_img/roof.jpg" width="280" height="180" alt="Сквозь стеклянный потолок видно облака">
+              </a>
+            </div>
+            <div class="gallery__description user-description">
+              <div class="user-description__info">
+                <span class="user-description__user-name">Борис</span>
+                <p class="user-description__user-post-time">(20 часов назад)</p>
+              </div>
+              <p class="user-description__text">
+                Здесь могла быть ваша цитата о высоком и вечном.
+              </p>
+              <div class="user-description__rating">
+                <svg width="13" height="12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.469 12a.782.782 0 0 1-.58-.25C1.958 7.42 1.036 6.44.86 6.17A3.765 3.765 0 0 1 0 3.8a3.723 3.723 0 0 1 .63-2.045A3.921 3.921 0 0 1 2.3.355 4.09 4.09 0 0 1 4.487.035 4.031 4.031 0 0 1 6.51.9 4.08 4.08 0 0 1 9.07 0a4.013 4.013 0 0 1 2.78 1.117A3.733 3.733 0 0 1 13 3.8a3.409 3.409 0 0 1-.923 2.38l-5.038 5.56a.757.757 0 0 1-.57.25V12zM2.073 5.28c.218.26 2.56 2.84 4.396 4.86l4.478-4.94a1.96 1.96 0 0 0 .539-1.4c0-.618-.254-1.21-.707-1.648A2.461 2.461 0 0 0 9.07 1.47c-.38.003-.756.09-1.097.252-.341.163-.64.398-.873.688a.844.844 0 0 1-.612.28.757.757 0 0 1-.332-.082.729.729 0 0 1-.258-.218 2.43 2.43 0 0 0-.868-.682 2.49 2.49 0 0 0-2.372.132 2.369 2.369 0 0 0-.882.968 2.267 2.267 0 0 0 .296 2.462v.01z"fill="#D22856" /></svg>
+                <p class="user-description__likes-number">
+                  Нравится: 215
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="gallery__item">
+            <div class="gallery__photo photo-of-users">
+              <a class="photo-of-users__link" href="blank.html">
+                <img src="img/user_img/melon_field.jpg" width="280" height="180" alt="Кубанская бахча">
+              </a>
+            </div>
+            <div class="gallery__description user-description">
+              <div class="user-description__info">
+                <span class="user-description__user-name">Сергей</span>
+                <p class="user-description__user-post-time">(25 часов назад)</p>
+              </div>
+              <p class="user-description__text">
+                Самая кубанская в мире!
+              </p>
+              <div class="user-description__rating">
+                <svg width="13" height="12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.469 12a.782.782 0 0 1-.58-.25C1.958 7.42 1.036 6.44.86 6.17A3.765 3.765 0 0 1 0 3.8a3.723 3.723 0 0 1 .63-2.045A3.921 3.921 0 0 1 2.3.355 4.09 4.09 0 0 1 4.487.035 4.031 4.031 0 0 1 6.51.9 4.08 4.08 0 0 1 9.07 0a4.013 4.013 0 0 1 2.78 1.117A3.733 3.733 0 0 1 13 3.8a3.409 3.409 0 0 1-.923 2.38l-5.038 5.56a.757.757 0 0 1-.57.25V12zM2.073 5.28c.218.26 2.56 2.84 4.396 4.86l4.478-4.94a1.96 1.96 0 0 0 .539-1.4c0-.618-.254-1.21-.707-1.648A2.461 2.461 0 0 0 9.07 1.47c-.38.003-.756.09-1.097.252-.341.163-.64.398-.873.688a.844.844 0 0 1-.612.28.757.757 0 0 1-.332-.082.729.729 0 0 1-.258-.218 2.43 2.43 0 0 0-.868-.682 2.49 2.49 0 0 0-2.372.132 2.369 2.369 0 0 0-.882.968 2.267 2.267 0 0 0 .296 2.462v.01z"fill="#D22856" /></svg>
+                <p class="user-description__likes-number">
+                  Нравится: 4
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="gallery__item">
+            <div class="gallery__photo photo-of-users">
+              <a class="photo-of-users__link" href="blank.html">
+                <img src="img/user_img/mountains.jpg" width="280" height="180" alt="Вид с гор">
+              </a>
+            </div>
+            <div class="gallery__description user-description">
+              <div class="user-description__info">
+                <span class="user-description__user-name">Максим</span>
+                <p class="user-description__user-post-time">(40 часов назад)</p>
+              </div>
+              <p class="user-description__text">
+                Где снег-то?
+              </p>
+              <div class="user-description__rating">
+                <svg width="13" height="12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.469 12a.782.782 0 0 1-.58-.25C1.958 7.42 1.036 6.44.86 6.17A3.765 3.765 0 0 1 0 3.8a3.723 3.723 0 0 1 .63-2.045A3.921 3.921 0 0 1 2.3.355 4.09 4.09 0 0 1 4.487.035 4.031 4.031 0 0 1 6.51.9 4.08 4.08 0 0 1 9.07 0a4.013 4.013 0 0 1 2.78 1.117A3.733 3.733 0 0 1 13 3.8a3.409 3.409 0 0 1-.923 2.38l-5.038 5.56a.757.757 0 0 1-.57.25V12zM2.073 5.28c.218.26 2.56 2.84 4.396 4.86l4.478-4.94a1.96 1.96 0 0 0 .539-1.4c0-.618-.254-1.21-.707-1.648A2.461 2.461 0 0 0 9.07 1.47c-.38.003-.756.09-1.097.252-.341.163-.64.398-.873.688a.844.844 0 0 1-.612.28.757.757 0 0 1-.332-.082.729.729 0 0 1-.258-.218 2.43 2.43 0 0 0-.868-.682 2.49 2.49 0 0 0-2.372.132 2.369 2.369 0 0 0-.882.968 2.267 2.267 0 0 0 .296 2.462v.01z"fill="#D22856" /></svg>
+                <p class="user-description__likes-number">
+                  Нравится: 150
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="gallery__item">
+            <div class="gallery__photo photo-of-users">
+              <a class="photo-of-users__link" href="blank.html">
+                <img src="img/user_img/airplane_wing.jpg" width="280" height="180" alt="Вид из окна самолета">
+              </a>
+            </div>
+            <div class="gallery__description user-description">
+              <div class="user-description__info">
+                <span class="user-description__user-name">Надежда</span>
+                <p class="user-description__user-post-time">(45 часов назад)</p>
+              </div>
+              <p class="user-description__text">
+                Всем GM и взаимные лайки!
+              </p>
+              <div class="user-description__rating">
+                <svg width="13" height="12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.469 12a.782.782 0 0 1-.58-.25C1.958 7.42 1.036 6.44.86 6.17A3.765 3.765 0 0 1 0 3.8a3.723 3.723 0 0 1 .63-2.045A3.921 3.921 0 0 1 2.3.355 4.09 4.09 0 0 1 4.487.035 4.031 4.031 0 0 1 6.51.9 4.08 4.08 0 0 1 9.07 0a4.013 4.013 0 0 1 2.78 1.117A3.733 3.733 0 0 1 13 3.8a3.409 3.409 0 0 1-.923 2.38l-5.038 5.56a.757.757 0 0 1-.57.25V12zM2.073 5.28c.218.26 2.56 2.84 4.396 4.86l4.478-4.94a1.96 1.96 0 0 0 .539-1.4c0-.618-.254-1.21-.707-1.648A2.461 2.461 0 0 0 9.07 1.47c-.38.003-.756.09-1.097.252-.341.163-.64.398-.873.688a.844.844 0 0 1-.612.28.757.757 0 0 1-.332-.082.729.729 0 0 1-.258-.218 2.43 2.43 0 0 0-.868-.682 2.49 2.49 0 0 0-2.372.132 2.369 2.369 0 0 0-.882.968 2.267 2.267 0 0 0 .296 2.462v.01z"fill="#D22856" /></svg>
+                <p class="user-description__likes-number">
+                  Нравится: 2560
+                </p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section class="photo-editor">
+        <h2 class="visually-hidden">Отредактировать и запостить фото</h2>
+        <h3 class="photo-editor__caption">
+          Затмите их всех! Выкладывайте все, что накопилось в телефоне!
+        </h3>
+        <img src="img/user_img/winter_road.jpg" width="280" height="374" alt="Зимняя дорога">
+        <ul class="photo-editor__list">
+          <li class="photo-editor__item">
+            <svg width="44" height="44" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M32 28h4V12a4 4 0 0 0-4-4H16v4h16v16zm-20 4V0H8v8H0v4h8v20a4 4 0 0 0 4 4h20v8h4v-8h8v-4H12z" fill="currentColor"/></svg>
+          </li>
+          <li class="photo-editor__item">
+            <svg width="48" height="43" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M33.12 17.88L15.24 0l-2.83 2.83 4.76 4.76L6.88 17.88a3 3 0 0 0 0 4.24l11 11a3 3 0 0 0 4.24 0l11-11a3 3 0 0 0 0-4.24zM10.41 20L20 10.42 29.59 20H10.41zM38 23s-4 4.33-4 7a4 4 0 1 0 8 0c0-2.67-4-7-4-7zM48 40H0v3h48v-3z" fill="currentColor"/></svg>
+          </li>
+          <li class="photo-editor__item">
+            <svg width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16 4a12 12 0 1 1 0 24 12 12 0 0 1 0-24zm0-4a16 16 0 1 0 0 32 16 16 0 0 0 0-32zM16 24.29a8.52 8.52 0 0 0 0-17" fill="currentColor"/></svg>
+          </li>
+        </ul>
+        <!-- ЧТО-ТО ТАКОЕ БУДЕТ У КАЖДОГО ЭЛЕМЕНТА СПИСКА
+        <div class="photo-editor__filter range">
+          <div class="range__controls">
+            <div class="range__scale"></div>
+            <div class="range__toggle"></div>
+          </div>
+        </div>
+        -->
+        <form class="photo-editor__form" method="post" action="https://echo.htmlacademy.ru/">
+          <button class="photo-editor__upload-button" type="button">Запостить</button>
+        </form>
+        <button class="photo-editor__canсel-button" type="button">Отмена</button>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <h2 class="visually-hidden">Ссылки на соц. сети</h2>
+      <div class="page-footer__wrapper">
+        <div class="page-footer__logo">
+          <svg width="145" height="40" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M71.005 18.549c0-.337.13-.66.365-.9.234-.24.552-.379.887-.387h7.133c5.057 0 8.385 2.703 8.385 7.13v.06c0 4.846-4.034 7.358-8.802 7.358h-5.435v6.801a1.282 1.282 0 0 1-.754 1.28 1.27 1.27 0 0 1-1.717-.758 1.282 1.282 0 0 1-.062-.522V18.549zm8.067 10.968c3.706 0 6.14-1.994 6.14-4.986v-.06c0-3.21-2.395-4.875-5.961-4.875h-5.663v9.881l5.484.04zM92.594 18.389a1.282 1.282 0 0 1 .754-1.28 1.269 1.269 0 0 1 1.717.758c.056.168.078.346.062.522v20.222a1.28 1.28 0 0 1-.754 1.28 1.27 1.27 0 0 1-1.717-.758 1.282 1.282 0 0 1-.063-.522V18.389zM101.674 18.419a1.278 1.278 0 0 1 1.252-1.247h.347a1.535 1.535 0 0 1 1.282.738l13.601 17.4V18.36c0-.329.13-.643.361-.875a1.229 1.229 0 0 1 1.742 0c.231.232.361.546.361.874v20.292c.005.154-.021.308-.076.452a1.13 1.13 0 0 1-1.077.725h-.129a1.69 1.69 0 0 1-1.311-.778l-13.909-17.81v17.41a1.257 1.257 0 0 1-1.192 1.247 1.23 1.23 0 0 1-1.212-1.246V18.419h-.04zM126.938 18.389a1.284 1.284 0 0 1 .755-1.28 1.267 1.267 0 0 1 1.45.306 1.287 1.287 0 0 1 .329.974v12.295l12.756-13.133c.262-.271.617-.432.994-.448.325.012.633.15.86.383.227.234.357.546.362.873a1.28 1.28 0 0 1-.418.897l-7.948 7.898 8.574 10.53c.224.26.348.593.348.937a1.309 1.309 0 0 1-1.341 1.276 1.228 1.228 0 0 1-.994-.578l-8.365-10.46-4.828 4.846v4.886a1.278 1.278 0 0 1-.37.895 1.26 1.26 0 0 1-2.154-.895V18.389h-.01z" fill="#283645"/><path fill-rule="evenodd" clip-rule="evenodd" d="M53.892 6.586l5.038 21.145a1.418 1.418 0 0 1-.22 1.297 1.356 1.356 0 0 1-1.183.535H53.52c-.69 5.812-5.57 10.315-11.489 10.315-5.917 0-10.798-4.503-11.488-10.314h-1.965C27.887 35.442 22.953 40 16.968 40c-5.994 0-10.934-4.573-11.612-10.466H1.45a1.364 1.364 0 0 1-1.154-.536 1.418 1.418 0 0 1-.24-1.267L5.106 6.586C5.455 4.26 7.639 0 13.486 0c.388 0 .76.157 1.034.435.274.279.428.657.428 1.05 0 .395-.154.772-.428 1.051a1.45 1.45 0 0 1-1.034.435c-4.707 0-5.438 3.694-5.497 4.1L3.341 26.602h2.034c.746-5.817 5.652-10.31 11.593-10.31 5.939 0 10.843 4.488 11.593 10.3l1.998.01c.745-5.75 5.598-10.189 11.473-10.189 5.886 0 10.746 4.456 11.477 10.222v-.053h2.137l-4.639-19.51c-.068-.407-.77-4.1-5.497-4.1a1.45 1.45 0 0 1-1.033-.436 1.498 1.498 0 0 1-.428-1.05c0-.394.154-.772.428-1.05A1.45 1.45 0 0 1 45.51 0c5.848 0 8.03 4.259 8.382 6.586zm-28.22 22.977a9.122 9.122 0 0 0-.022-2.97c-.725-4.195-4.336-7.383-8.681-7.383-4.349 0-7.961 3.192-8.683 7.391a9.114 9.114 0 0 0-.025 2.94c.66 4.273 4.308 7.541 8.707 7.541 4.392 0 8.034-3.257 8.704-7.518zm24.942 0c.073-.461.112-.934.112-1.417 0-4.868-3.893-8.815-8.694-8.815-4.802 0-8.695 3.947-8.695 8.815 0 .482.039.956.112 1.418.669 4.194 4.257 7.397 8.583 7.397 4.325 0 7.913-3.203 8.582-7.397z" fill="#D22856"/></svg>
+        </div>
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--twitter" href="#">
+                <svg width="18" height="14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.564.169A3.675 3.675 0 0 1 13.672.14c.688.196 1.291.59 1.723 1.122.71-.21 1.41-.447 2.131-.656a2.03 2.03 0 0 1-.253.917c-.157.284-.38.533-.653.729.253.026.508-.002.747-.081.24-.08.456-.208.633-.376-.099.414-.3.801-.588 1.131-.287.33-.653.594-1.07.772-.247 6.27-3.367 10.467-10.689 10.296H5.15c-.443 0-4.418-.428-5.149-1.75 1.752.245 3.539-.147 4.984-1.095-1.03-.286-2.852-.447-3.161-2.74.388.133.81.163 1.215.085C1.76 7.705.34 7.039.422 4.993c.398.306.905.462 1.421.438C1.102 5.203-.247 2.31.896.825c1.926 1.723 3.964 3.35 7.59 3.512C8.711 2.205 9.69.777 11.563.169z" fill="#D22856"/></svg>
+                <span class="visually-hidden">Твиттер</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="#">
+                <svg width="9" height="18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.509 3.193H9V0H6.02C2.762.171 1.6 2.271 2.077 5.816H0v3.336h2.076V18h3.945V9.152h2.958V5.816H6.01c-.02-.998-.041-2.29.499-2.623z" fill="#D22856"/></svg>
+                <span class="visually-hidden">Фейсбук</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="#">
+                <svg width="15" height="13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.834 12.809a1.257 1.257 0 0 1-1.285.03 1.097 1.097 0 0 1-.443-.457.97.97 0 0 1-.092-.603V1.221A.97.97 0 0 1 .106.618C.2.429.355.27.549.16a1.256 1.256 0 0 1 1.285.031l12.4 5.502c1.022.445 1.022 1.169 0 1.614l-12.4 5.502z" fill="#D22856"/></svg>
+                <span class="visually-hidden">Ютуб</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+          <p class="copyright__text">Разработано</p>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML-academy">
+            <svg width="27" height="34" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.643.016L13.5 0 0 1.407v24.606L13.5 34 27 26.013V1.407L13.643.016zm11.591 25L13.5 31.956 1.766 25.015V14.93l11.685 6.916.02 1.253-8.017-4.743-.011 1.225 8.046 4.809.02 1.286-8.045-4.758-.01 1.226L13.5 26.95l8.124-4.833V16.91l3.62-2.15-.01 10.256zm0-11.564l-3.22 1.88-1.482.875-7.065-4.187-.011 1.225 6.04 3.573-.053.031-.13.076-.86.492-4.986-2.948-.011 1.225 3.936 2.328-.933.61-.021.012-2.971-1.742-.011 1.225 1.947 1.135-1.988 1.186-11.618-6.872 11.638-6.958 11.8 6.834zm0-1.225L13.44 5.31 1.766 12.22V2.99L13.5 1.764 25.234 2.99v9.237z" fill="#D22856"/><path d="M13.643.016L13.5 0 0 1.407v24.606L13.5 34 27 26.013V1.407L13.643.016zm11.591 25L13.5 31.956 1.766 25.015V14.93l11.685 6.916.02 1.253-8.017-4.743-.011 1.225 8.046 4.809.02 1.286-8.045-4.758-.01 1.226L13.5 26.95l8.124-4.833V16.91l3.62-2.15-.01 10.256zm0-11.564l-3.22 1.88-1.482.875-7.065-4.187-.011 1.225 6.04 3.573-.053.031-.13.076-.86.492-4.986-2.948-.011 1.225 3.936 2.328-.933.61-.021.012-2.971-1.742-.011 1.225 1.947 1.135-1.988 1.186-11.618-6.872 11.638-6.958 11.8 6.834zm0-1.225L13.44 5.31 1.766 12.22V2.99L13.5 1.764 25.234 2.99v9.237z" fill="#000" fill-opacity=".2"/></svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    </body>
+    </html>
