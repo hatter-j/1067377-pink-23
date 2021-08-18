@@ -1,0 +1,70 @@
+.contacts {
+  padding: 50px 39px;
+}
+
+.contacts__caption {
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 300;
+}
+
+.contacts__list {
+  .list-item-style();
+}
+
+.contacts__text {
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 700;
+}
+
+.contacts__phone {
+  text-decoration: none;
+}
+
+.contacts__mail {
+  &:hover,
+  &:focus {
+    color: @dark_grey;
+    text-decoration: underline;
+  }
+
+  &:active {
+    color: rgba(@dark_grey, 0.3);
+    text-decoration: none;
+  }
+}
+
+.contacts__data {
+  font-size: 24px;
+  line-height: 33px;
+  font-weight: 300;
+  color: @pink;
+}
+
+.contacts__gradient-to-left {
+  width: 50%;
+  height: 30px;
+  background-image: linear-gradient(to left bottom, #ff0000 50%, #ffff00 50%);
+}
+/*ВМЕСТО YELLOW БУДЕТ TRANSPARENT*/
+/*ВМЕСТО RED БУДЕТ @white*/
+/* ПОДОГНАТЬ ПОД РАЗМЕР*/
+
+.contacts__gradient-to-right {
+  width: 50%;
+  height: 30px;
+  background-image: linear-gradient(to right bottom, #ff0000 50%, #ffff00 50%);
+}
+
+/* БУДЕТ ЧТО-ТО ТАКОЕ*/
+.contacts__gradient-container {
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  display: flex;
+}
+
+.contacts__map {
+  position: relative;
+}

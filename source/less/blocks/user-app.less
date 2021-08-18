@@ -1,0 +1,50 @@
+.user-app {
+  border: none;
+  padding: 42px 22px;
+  background-color: @light_grey;
+}
+
+.user-app__legend {
+  line-height: 18px;
+  color: @pink;
+  text-transform: uppercase;
+  padding-top: 60px;
+}
+
+.user-app__list {
+  .list-item-style();
+}
+
+.user-app__item {
+  margin: 20px 0;
+  position: relative;
+}
+
+.user-app__label {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.user-app__radio-btn {
+  color: @grey;
+
+  &:hover,
+  &:focus {
+    color: @dark_grey;
+  }
+
+  &:active {
+    color: @pink;
+  }
+}
+
+.user-app__radio-btn--checked {
+  color: @pink;
+  display: none;
+}
+
+/*ПОДВИНУТЬ*/
+.user-app__input:checked ~ .user-app__radio-btn--checked {
+  display: block;
+  position: absolute;
+}

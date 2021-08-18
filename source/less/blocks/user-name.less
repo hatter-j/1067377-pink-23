@@ -1,0 +1,36 @@
+.user-name {
+  border: none;
+  padding: 50px 22px;
+}
+
+.user-name__list {
+  .list-item-style();
+}
+
+.user-name__item {
+  margin: 29px 0;
+  line-height: 30px;
+}
+
+.user-name__label {
+  color: @pink;
+  text-transform: uppercase;
+}
+
+.user-name__input {
+  color: @dark_grey;
+  height: 59px;
+  border: 2px solid @grey;
+  padding-left: 20px;
+  box-sizing: border-box;
+  text-overflow: ellipsis;
+
+  &:hover,
+  &:focus {
+    border-color: @dark_grey;
+  }
+
+  &:active {
+    border-color: @pink;
+  }
+}

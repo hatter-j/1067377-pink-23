@@ -1,0 +1,51 @@
+.user-achievements {
+  border: none;
+  padding: 42px 22px;
+  background-color: @light_grey;
+}
+
+.user-achievements__legend {
+  line-height: 18px;
+  color: @pink;
+  text-transform: uppercase;
+  padding-top: 60px;
+}
+
+.user-achievements__list {
+  .list-item-style();
+}
+
+.user-achievements__item {
+  margin: 20px 0;
+}
+
+.user-achievements__label {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+/*В СЕТКАХ БУДЕТ ORDER:1*/
+.user-achievements__checkbox {
+  color: @grey;
+  position: relative;
+
+  &:hover,
+  &:focus {
+    color: @dark_grey;
+  }
+
+  &:active {
+    color: @pink;
+  }
+}
+
+.user-achievements__tick {
+  color: @pink;
+  display: none;
+}
+
+/*ПОДВИНУТЬ НА ЧЕКБОКС*/
+.user-achievements__input:checked ~ .user-achievements__tick {
+  display: block;
+  position: absolute;
+}
