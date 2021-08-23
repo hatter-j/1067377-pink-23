@@ -2,21 +2,21 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Пинк</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
 
-    <header class="page-header page-header--closed">
-      <div class="page-header__wrapper">
+    <header class="page-header page-header--opened">
         <img class="page-header__logo" src="img/logo_pink.svg" width="74" height="23" alt="Пинк">
-        <nav class="main-nav main-nav--closed main-nav--nojs">
-          <button class="main-nav__toggle" type="button">
-            <svg class="main-nav__button--closed" width="50" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.137 0c-.15-.003-.3.021-.439.07C.558.12.432.195.326.288A.98.98 0 0 0 .08.614.877.877 0 0 0 0 1v2c0 .265.12.52.333.707.213.188.502.293.804.293h47.726c.15.003.3-.021.439-.07.14-.05.266-.123.372-.217a.98.98 0 0 0 .246-.327A.877.877 0 0 0 50 3V1c0-.265-.12-.52-.333-.707A1.22 1.22 0 0 0 48.863 0H1.137zm0 10a1.25 1.25 0 0 0-.439.07c-.14.05-.266.123-.372.217a.98.98 0 0 0-.246.327A.877.877 0 0 0 0 11v2c0 .265.12.52.333.707.213.188.502.293.804.293h47.726c.15.003.3-.021.439-.07.14-.05.266-.123.372-.217a.98.98 0 0 0 .246-.327A.877.877 0 0 0 50 13v-2c0-.265-.12-.52-.333-.707a1.22 1.22 0 0 0-.804-.293H1.137zm0 10c-.15-.003-.3.021-.439.07-.14.05-.266.123-.372.217a.98.98 0 0 0-.246.327A.877.877 0 0 0 0 21v2c0 .265.12.52.333.707.213.187.502.293.804.293h47.726c.15.003.3-.021.439-.07.14-.05.266-.124.372-.217a.98.98 0 0 0 .246-.327A.877.877 0 0 0 50 23v-2c0-.265-.12-.52-.333-.707a1.22 1.22 0 0 0-.804-.293H1.137z" fill="currentColor"/></svg>
-            <svg class="main-nav__button--opened" width="23" height="23" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20.849 0L0 20.849 2.151 23 23 2.151 20.849 0z" fill="currentColor"/><path d="M2.151 0L0 2.151 20.849 23 23 20.849 2.151 0z" fill="currentColor"/></svg>
-            <span class="visually-hidden">Открыть меню</span>
-          </button>
+        <button class="page-header__toggle" type="button">
+          <svg class="page-header__button--closed" width="50" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.137 0c-.15-.003-.3.021-.439.07C.558.12.432.195.326.288A.98.98 0 0 0 .08.614.877.877 0 0 0 0 1v2c0 .265.12.52.333.707.213.188.502.293.804.293h47.726c.15.003.3-.021.439-.07.14-.05.266-.123.372-.217a.98.98 0 0 0 .246-.327A.877.877 0 0 0 50 3V1c0-.265-.12-.52-.333-.707A1.22 1.22 0 0 0 48.863 0H1.137zm0 10a1.25 1.25 0 0 0-.439.07c-.14.05-.266.123-.372.217a.98.98 0 0 0-.246.327A.877.877 0 0 0 0 11v2c0 .265.12.52.333.707.213.188.502.293.804.293h47.726c.15.003.3-.021.439-.07.14-.05.266-.123.372-.217a.98.98 0 0 0 .246-.327A.877.877 0 0 0 50 13v-2c0-.265-.12-.52-.333-.707a1.22 1.22 0 0 0-.804-.293H1.137zm0 10c-.15-.003-.3.021-.439.07-.14.05-.266.123-.372.217a.98.98 0 0 0-.246.327A.877.877 0 0 0 0 21v2c0 .265.12.52.333.707.213.187.502.293.804.293h47.726c.15.003.3-.021.439-.07.14-.05.266-.124.372-.217a.98.98 0 0 0 .246-.327A.877.877 0 0 0 50 23v-2c0-.265-.12-.52-.333-.707a1.22 1.22 0 0 0-.804-.293H1.137z" fill="currentColor" /></svg>
+          <svg class="page-header__button--opened" width="23" height="23" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20.849 0L0 20.849 2.151 23 23 2.151 20.849 0z" fill="currentColor" /><path d="M2.151 0L0 2.151 20.849 23 23 20.849 2.151 0z" fill="currentColor" /></svg>
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <nav class="page-header__nav main-nav">
           <ul class="main-nav__list">
             <li class="main-nav__item main-nav__item--current">
               <a>Главная</a>
@@ -32,7 +32,6 @@
             </li>
           </ul>
         </nav>
-      </div>
     </header>
 
     <main class="page-main">
@@ -79,7 +78,7 @@
 
       <section class="features">
         <h2 class="visually-hidden">Преимущества приложения Пинк</h2>
-        <div class="features__background gradient-background"></div>
+        <div class="features__background"></div>
         <div class="features__wrapper">
           <dl class="features__list">
             <div class="features__item">
@@ -133,7 +132,7 @@
 
       <section class="prices">
         <h2 class="visually-hidden">Тарифы</h2>
-        <div class="prices__background gradient-background"></div>
+        <div class="prices__background"></div>
         <div class="prices__wrapper slider">
           <ul class="prices__table">
             <li class="prices__item prices__name">
@@ -216,13 +215,10 @@
               <span class="contacts__data">ул. Большая Конюшенная, 19/8</span>
             </li>
           </ul>
-          <div class="contacts__gradient-container">
-            <div class="contacts__gradient-to-left"></div>
-            <div class="contacts__gradient-to-right"></div>
-          </div>
-          <div class="contacts__map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2826.448188675639!2d30.32026627289218!3d59.938768023754626!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1627144412318!5m2!1sru!2sru" width="320" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-          </div>
+        </div>
+        <div class="contacts__gradient"></div>
+        <div class="contacts__map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2826.448188675639!2d30.32026627289218!3d59.938768023754626!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1627144412318!5m2!1sru!2sru" width="320" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
       </section>
 
@@ -266,27 +262,7 @@
       </div>
     </footer>
 
-    <script>
-      var navMain = document.querySelector('.main-nav');
-      var navToggle = document.querySelector('.main-nav__toggle');
-      var pageHeader = document.querySelector('.page-header');
-
-      navMain.classList.remove('main-nav--nojs');
-
-      navToggle.addEventListener('click', function() {
-        if (navMain.classList.contains('main-nav--closed')) {
-          navMain.classList.remove('main-nav--closed');
-          navMain.classList.add('main-nav--opened');
-          pageHeader.classList.remove('page-header--closed');
-          pageHeader.classList.add('page-header--opened');
-        } else {
-          navMain.classList.add('main-nav--closed');
-          navMain.classList.remove('main-nav--opened');
-          pageHeader.classList.add('page-header--closed');
-          pageHeader.classList.remove('page-header--opened');
-        }
-      });
-    </script>
+    <script src="js/page-header-toggle.js"></script>
 
   </body>
 </html>

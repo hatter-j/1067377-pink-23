@@ -2,39 +2,36 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Пинк</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
 
-    <header class="page-header">
-      <div class="page-header__wrapper">
-        <a class="page-header__link" href="index.html">
-          <img class="page-header__logo" src="img/logo_pink.svg" width="74" height="23" alt="Пинк">
-        </a>
-        <nav class="main-nav main-nav--closed main-nav--nojs">
-          <button class="main-nav__toggle" type="button">
-            <svg class="main-nav__button--closed" width="50" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.137 0c-.15-.003-.3.021-.439.07C.558.12.432.195.326.288A.98.98 0 0 0 .08.614.877.877 0 0 0 0 1v2c0 .265.12.52.333.707.213.188.502.293.804.293h47.726c.15.003.3-.021.439-.07.14-.05.266-.123.372-.217a.98.98 0 0 0 .246-.327A.877.877 0 0 0 50 3V1c0-.265-.12-.52-.333-.707A1.22 1.22 0 0 0 48.863 0H1.137zm0 10a1.25 1.25 0 0 0-.439.07c-.14.05-.266.123-.372.217a.98.98 0 0 0-.246.327A.877.877 0 0 0 0 11v2c0 .265.12.52.333.707.213.188.502.293.804.293h47.726c.15.003.3-.021.439-.07.14-.05.266-.123.372-.217a.98.98 0 0 0 .246-.327A.877.877 0 0 0 50 13v-2c0-.265-.12-.52-.333-.707a1.22 1.22 0 0 0-.804-.293H1.137zm0 10c-.15-.003-.3.021-.439.07-.14.05-.266.123-.372.217a.98.98 0 0 0-.246.327A.877.877 0 0 0 0 21v2c0 .265.12.52.333.707.213.187.502.293.804.293h47.726c.15.003.3-.021.439-.07.14-.05.266-.124.372-.217a.98.98 0 0 0 .246-.327A.877.877 0 0 0 50 23v-2c0-.265-.12-.52-.333-.707a1.22 1.22 0 0 0-.804-.293H1.137z" fill="currentColor"/></svg>
-            <svg class="main-nav__button--opened" width="23" height="23" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20.849 0L0 20.849 2.151 23 23 2.151 20.849 0z" fill="currentColor"/><path d="M2.151 0L0 2.151 20.849 23 23 20.849 2.151 0z" fill="currentColor"/></svg>
-            <span class="visually-hidden">Открыть меню</span>
-          </button>
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a href="index.html">Главная</a>
-            </li>
-            <li class="main-nav__item">
-              <a href="catalog.html">Фотографии</a>
-            </li>
-            <li class="main-nav__item main-nav__item--current">
-              <a>Конкурс</a>
-            </li>
-            <li class="main-nav__item">
-              <a href="#">HTML Academy</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
+    <header class="page-header page-header--opened">
+      <img class="page-header__logo" src="img/logo_pink.svg" width="74" height="23" alt="Пинк">
+      <button class="page-header__toggle" type="button">
+        <svg class="page-header__button--closed" width="50" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.137 0c-.15-.003-.3.021-.439.07C.558.12.432.195.326.288A.98.98 0 0 0 .08.614.877.877 0 0 0 0 1v2c0 .265.12.52.333.707.213.188.502.293.804.293h47.726c.15.003.3-.021.439-.07.14-.05.266-.123.372-.217a.98.98 0 0 0 .246-.327A.877.877 0 0 0 50 3V1c0-.265-.12-.52-.333-.707A1.22 1.22 0 0 0 48.863 0H1.137zm0 10a1.25 1.25 0 0 0-.439.07c-.14.05-.266.123-.372.217a.98.98 0 0 0-.246.327A.877.877 0 0 0 0 11v2c0 .265.12.52.333.707.213.188.502.293.804.293h47.726c.15.003.3-.021.439-.07.14-.05.266-.123.372-.217a.98.98 0 0 0 .246-.327A.877.877 0 0 0 50 13v-2c0-.265-.12-.52-.333-.707a1.22 1.22 0 0 0-.804-.293H1.137zm0 10c-.15-.003-.3.021-.439.07-.14.05-.266.123-.372.217a.98.98 0 0 0-.246.327A.877.877 0 0 0 0 21v2c0 .265.12.52.333.707.213.187.502.293.804.293h47.726c.15.003.3-.021.439-.07.14-.05.266-.124.372-.217a.98.98 0 0 0 .246-.327A.877.877 0 0 0 50 23v-2c0-.265-.12-.52-.333-.707a1.22 1.22 0 0 0-.804-.293H1.137z" fill="currentColor" /></svg>
+        <svg class="page-header__button--opened" width="23" height="23" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20.849 0L0 20.849 2.151 23 23 2.151 20.849 0z" fill="currentColor" /><path d="M2.151 0L0 2.151 20.849 23 23 20.849 2.151 0z" fill="currentColor" /></svg>
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <nav class="page-header__nav main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="catalog.html">Фотографии</a>
+          </li>
+          <li class="main-nav__item main-nav__item--current">
+            <a>Конкурс</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#">HTML Academy</a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <main class="page-main">
@@ -76,48 +73,36 @@
                 <label class="user-achievements__label" for="selfie">
                   Сделал селфи с акулой
                   <input class="user-achievements__input visually-hidden" type="checkbox" name="selfie" id="selfie" checked>
-                  <svg class="user-achievements__checkbox" width="39" height="39" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="1" y="1" width="37" height="37" rx="2" fill="#fff" stroke="currentColor" stroke-width="2"/></svg>
-                  <svg class="user-achievements__tick" width="22" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21.7.284a1.024 1.024 0 0 0-1.42 0L6.704 13.603 1.735 8.729a1.015 1.015 0 0 0-.72-.294 1.031 1.031 0 0 0-.72.294.985.985 0 0 0 0 1.403l5.688 5.58a1.016 1.016 0 0 0 .72.288c.266-.001.521-.105.71-.289L21.7 1.697A.995.995 0 0 0 22 .99a.978.978 0 0 0-.3-.707z" fill="currentColor"/></svg>
                 </label>
               </li>
               <li class="user-achievements__item">
                 <label class="user-achievements__label" for="sunburn">
                   Обгорел на пляже
                   <input class="user-achievements__input visually-hidden" type="checkbox" name="sunburn" id="sunburn" checked>
-                  <svg class="user-achievements__checkbox" width="39" height="39" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="1" y="1" width="37" height="37" rx="2" fill="#fff" stroke="currentColor" stroke-width="2"/></svg>
-                  <svg class="user-achievements__tick" width="22" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21.7.284a1.024 1.024 0 0 0-1.42 0L6.704 13.603 1.735 8.729a1.015 1.015 0 0 0-.72-.294 1.031 1.031 0 0 0-.72.294.985.985 0 0 0 0 1.403l5.688 5.58a1.016 1.016 0 0 0 .72.288c.266-.001.521-.105.71-.289L21.7 1.697A.995.995 0 0 0 22 .99a.978.978 0 0 0-.3-.707z" fill="currentColor"/></svg>
                 </label>
               </li>
               <li class="user-achievements__item">
                 <label class="user-achievements__label" for="norris">
                   Видел Чака Норриса
                   <input class="user-achievements__input visually-hidden" type="checkbox" name="norris" id="norris">
-                  <svg class="user-achievements__checkbox" width="39" height="39" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="1" y="1" width="37" height="37" rx="2" fill="#fff" stroke="currentColor" stroke-width="2"/></svg>
-                  <svg class="user-achievements__tick" width="22" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21.7.284a1.024 1.024 0 0 0-1.42 0L6.704 13.603 1.735 8.729a1.015 1.015 0 0 0-.72-.294 1.031 1.031 0 0 0-.72.294.985.985 0 0 0 0 1.403l5.688 5.58a1.016 1.016 0 0 0 .72.288c.266-.001.521-.105.71-.289L21.7 1.697A.995.995 0 0 0 22 .99a.978.978 0 0 0-.3-.707z" fill="currentColor"/></svg>
                 </label>
               </li>
               <li class="user-achievements__item">
                 <label class="user-achievements__label" for="souvenirs">
                   Накупил сувениров
                   <input class="user-achievements__input visually-hidden" type="checkbox" name="souvenirs" id="souvenirs">
-                  <svg class="user-achievements__checkbox" width="39" height="39" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="1" y="1" width="37" height="37" rx="2" fill="#fff" stroke="currentColor" stroke-width="2"/></svg>
-                  <svg class="user-achievements__tick" width="22" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21.7.284a1.024 1.024 0 0 0-1.42 0L6.704 13.603 1.735 8.729a1.015 1.015 0 0 0-.72-.294 1.031 1.031 0 0 0-.72.294.985.985 0 0 0 0 1.403l5.688 5.58a1.016 1.016 0 0 0 .72.288c.266-.001.521-.105.71-.289L21.7 1.697A.995.995 0 0 0 22 .99a.978.978 0 0 0-.3-.707z" fill="currentColor"/></svg>
                 </label>
                 </li>
               <li class="user-achievements__item">
                 <label class="user-achievements__label" for="tower">
                   Удержал башню
                   <input class="user-achievements__input visually-hidden" type="checkbox" name="tower" id="tower" checked>
-                  <svg class="user-achievements__checkbox" width="39" height="39" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="1" y="1" width="37" height="37" rx="2" fill="#fff" stroke="currentColor" stroke-width="2"/></svg>
-                  <svg class="user-achievements__tick" width="22" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21.7.284a1.024 1.024 0 0 0-1.42 0L6.704 13.603 1.735 8.729a1.015 1.015 0 0 0-.72-.294 1.031 1.031 0 0 0-.72.294.985.985 0 0 0 0 1.403l5.688 5.58a1.016 1.016 0 0 0 .72.288c.266-.001.521-.105.71-.289L21.7 1.697A.995.995 0 0 0 22 .99a.978.978 0 0 0-.3-.707z" fill="currentColor"/></svg>
                 </label>
               </li>
               <li class="user-achievements__item">
                 <label class="user-achievements__label" for="hotel">
                   Разгромил отель
                   <input class="user-achievements__input visually-hidden" type="checkbox" name="hotel" id="hotel">
-                  <svg class="user-achievements__checkbox" width="39" height="39" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="1" y="1" width="37" height="37" rx="2" fill="#fff" stroke="currentColor" stroke-width="2"/></svg>
-                  <svg class="user-achievements__tick" width="22" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21.7.284a1.024 1.024 0 0 0-1.42 0L6.704 13.603 1.735 8.729a1.015 1.015 0 0 0-.72-.294 1.031 1.031 0 0 0-.72.294.985.985 0 0 0 0 1.403l5.688 5.58a1.016 1.016 0 0 0 .72.288c.266-.001.521-.105.71-.289L21.7 1.697A.995.995 0 0 0 22 .99a.978.978 0 0 0-.3-.707z" fill="currentColor"/></svg>
                 </label>
                 </li>
             </ul>
@@ -165,7 +150,7 @@
 
           <fieldset class="form__user-emotions user-emotions">
             <label class="user-emotions__label" for="user-emotions">Опишите свои эмоции</label>
-            <textarea class="user-emotions__textarea" name="user-emotions" id="user-emotions" rows="8" cols="42">Можно прям в красках, не стесняясь в выражениях</textarea>
+            <textarea class="user-emotions__textarea" name="user-emotions" id="user-emotions" rows="6" cols="25">Можно прям в красках, не стесняясь в выражениях</textarea>
           </fieldset>
 
         </form>
@@ -216,27 +201,7 @@
         </div>
       </footer>
 
-      <script>
-        var navMain = document.querySelector('.main-nav');
-        var navToggle = document.querySelector('.main-nav__toggle');
-        var pageHeader = document.querySelector('.page-header');
-
-        navMain.classList.remove('main-nav--nojs');
-
-        navToggle.addEventListener('click', function() {
-          if (navMain.classList.contains('main-nav--closed')) {
-            navMain.classList.remove('main-nav--closed');
-            navMain.classList.add('main-nav--opened');
-            pageHeader.classList.remove('page-header--closed');
-            pageHeader.classList.add('page-header--opened');
-          } else {
-            navMain.classList.add('main-nav--closed');
-            navMain.classList.remove('main-nav--opened');
-            pageHeader.classList.add('page-header--closed');
-            pageHeader.classList.remove('page-header--opened');
-          }
-        });
-      </script>
+      <script src="js/page-header-toggle.js"></script>
 
 </body>
 </html>

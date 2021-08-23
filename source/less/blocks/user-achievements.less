@@ -1,6 +1,6 @@
 .user-achievements {
   border: none;
-  padding: 42px 22px;
+  padding: 0 22px 42;
   background-color: @light_grey;
 }
 
@@ -17,35 +17,29 @@
 
 .user-achievements__item {
   margin: 20px 0;
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    background-image: url("../../img/icon_checkbox.svg");
+    width: 35px;
+    height: 35px;
+    transform: translateY(90%);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 61%;
+    left: 3%;
+    background-image: url("../../img/icon_tick.svg");
+    width: 22px;
+    height: 16px;
+  }
 }
 
 .user-achievements__label {
   font-size: 18px;
   line-height: 30px;
-}
-
-/*В СЕТКАХ БУДЕТ ORDER:1*/
-.user-achievements__checkbox {
-  color: @grey;
-  position: relative;
-
-  &:hover,
-  &:focus {
-    color: @dark_grey;
-  }
-
-  &:active {
-    color: @pink;
-  }
-}
-
-.user-achievements__tick {
-  color: @pink;
-  display: none;
-}
-
-/*ПОДВИНУТЬ НА ЧЕКБОКС*/
-.user-achievements__input:checked ~ .user-achievements__tick {
-  display: block;
-  position: absolute;
 }

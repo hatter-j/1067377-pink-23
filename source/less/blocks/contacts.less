@@ -1,5 +1,5 @@
-.contacts {
-  padding: 50px 39px;
+.contacts__wrapper {
+  padding: 50px 39px 20px;
 }
 
 .contacts__caption {
@@ -42,29 +42,14 @@
   color: @pink;
 }
 
-.contacts__gradient-to-left {
-  width: 50%;
-  height: 30px;
-  background-image: linear-gradient(to left bottom, #ff0000 50%, #ffff00 50%);
-}
-/*ВМЕСТО YELLOW БУДЕТ TRANSPARENT*/
-/*ВМЕСТО RED БУДЕТ @white*/
-/* ПОДОГНАТЬ ПОД РАЗМЕР*/
-
-.contacts__gradient-to-right {
-  width: 50%;
-  height: 30px;
-  background-image: linear-gradient(to right bottom, #ff0000 50%, #ffff00 50%);
-}
-
-/* БУДЕТ ЧТО-ТО ТАКОЕ*/
-.contacts__gradient-container {
-  position: absolute;
-  width: 100%;
-  z-index: 1;
-  display: flex;
-}
-
-.contacts__map {
+.contacts__gradient {
+  background-image: url("../../img/background_triangle.svg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  width: 320px;
+  height: 35px;
+  background-color: transparent;
   position: relative;
+  z-index: 1;
+  margin-bottom: -35px;
 }
