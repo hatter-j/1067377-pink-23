@@ -1,0 +1,33 @@
+.slider__toggles {
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 50px;
+  margin: 0 auto;
+}
+
+.slider__toggle {
+  padding: 0;
+  width: 6px;
+  height: 6px;
+  background-color: rgba(@dark_grey, 0.3);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: rgba(@dark_grey, 0.6);
+  }
+
+  &:active {
+    background-color: rgba(@dark_grey, 0.1);
+  }
+}
+
+.slider__toggle--current {
+  width: 9px;
+  height: 9px;
+  border: 3px solid @dark_grey;
+}

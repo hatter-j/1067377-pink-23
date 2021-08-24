@@ -1,0 +1,28 @@
+.range {
+  padding: 38px 20px 34px;
+}
+
+.range__controls {
+  position: relative;
+}
+
+.range__scale {
+  width: 240px;
+  height: 2px;
+  background-color: @dark_grey;
+}
+
+.range__toggle {
+  width: 12px;
+  height: 12px;
+  background-color: @white;
+  border: 2px solid @pink;
+  border-radius: 50%;
+  position: absolute;
+  top: -300%;
+  left: 12%;
+
+  &:active {
+    background-color: @pink;
+  }
+}

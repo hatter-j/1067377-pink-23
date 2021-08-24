@@ -1,0 +1,44 @@
+.features__background {
+  background-image: url("../../img/background_polygon_1.svg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  width: 320px;
+  height: 36px;
+}
+
+.features__wrapper {
+  padding: 53px 20px 400px;
+  background-color: @light_grey;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 157px;
+    height: 320px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../../img/phone_3.png");
+    transform: translateY(470px) translateX(40%);
+  }
+}
+
+.features__list {
+  margin: 0;
+  margin-top: -330px;
+}
+
+.features__caption {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  color: @black;
+  margin-bottom: 24px;
+}
+
+.features__description {
+  line-height: 24px;
+  margin-left: 0;
+  margin-bottom: 43px;
+  position: relative;
+  z-index: 1;
+}

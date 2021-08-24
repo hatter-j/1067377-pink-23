@@ -1,0 +1,40 @@
+.user-contacts {
+  border: none;
+  padding: 20px 22px;
+}
+
+.user-contacts__list {
+  .list-item-style();
+}
+
+.user-contacts__item {
+  margin: 0 0 29px;
+  line-height: 30px;
+}
+
+.user-contacts__label {
+  color: @pink;
+  text-transform: uppercase;
+}
+
+.user-contacts__input {
+  color: @dark_grey;
+  height: 59px;
+  border: 2px solid @grey;
+  padding-left: 20px;
+  box-sizing: border-box;
+  text-overflow: ellipsis;
+
+  &:hover,
+  &:focus {
+    border-color: @dark_grey;
+  }
+
+  &:active {
+    border-color: @pink;
+  }
+
+  &::placeholder {
+    color: @dark_grey;
+  }
+}

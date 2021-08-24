@@ -1,0 +1,36 @@
+.social__list {
+  .list-item-style();
+}
+
+.social__item {
+  margin: 30px;
+}
+
+.social__link {
+  border: 3px solid rgba(@dark_grey, 0.1);
+  border-radius: 50%;
+  color: @pink;
+
+  &:hover,
+  &:focus {
+    border-color: @dark_grey;
+  }
+
+  &:active {
+    border: 3px solid rgba(@dark_grey, 0.1);
+    color: rgba(@pink, 0.3);
+  }
+}
+
+/*ПОДОГНАТЬ РАЗМЕРЫ*/
+.social__link--twitter {
+  padding: 17px;
+}
+
+.social__link--facebook {
+  padding: 12px 17px;
+}
+
+.social__link--youtube {
+  padding: 15px 17px;
+}
