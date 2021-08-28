@@ -4,16 +4,34 @@
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
+
+  @media (min-width: @desktop-width) {
+    line-height: 18px;
+    text-transform: none;
+    font-weight: 400;
+  }
 }
 
 .main-nav__list {
   .list-item-style();
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 173px 20px;
+  }
 }
 
 .main-nav__item {
   padding: 25px 0 25px;
   border-top: 1px solid @black;
   box-shadow: 0 1px 0 0 @black, inset 0 1px 0 0 rgba(@white, 0.15);
+
+  @media (min-width: @desktop-width) {
+    border: none;
+    box-shadow: none;
+    margin-right: 60px;
+  }
 
   a {
     .link-style();
