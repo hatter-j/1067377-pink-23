@@ -28,7 +28,18 @@
     transform: translateY(90%);
   }
 
-  &::after {
+  &:hover::before,
+  &:focus::before {
+    background-image: url("../../img/icon_checkbox--hover.svg");
+  }
+
+  &:active::before {
+    background-image: url("../../img/icon_checkbox--active.svg");
+  }
+}
+
+.user-achievements__input {
+  &:checked::after {
     content: "";
     position: absolute;
     top: 61%;

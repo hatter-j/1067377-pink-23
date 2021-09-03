@@ -1,17 +1,15 @@
 .reviews {
+  background-color: @white;
+  padding-top: 5px;
+
   @media (max-width: @mobile-width-only) {
     margin-top: -180px;
     position: relative;
     z-index: 2;
   }
-
-  @media (min-width: @desktop-width) {
-    padding: 0 130px;
-  }
 }
 
 .reviews__slider {
-  background-color: @white;
   width: 100%;
 }
 
@@ -20,7 +18,7 @@
 }
 
 .reviews__blockquote {
-  margin: 50px 20px 40px;
+  margin: 50px 0 40px;
 
   @media (min-width: @tablet-width) {
     display: grid;
@@ -71,6 +69,9 @@
 
 .reviews__toggles {
   padding: 40px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 
   @media (min-width: @desktop-width) {
     display: none;
