@@ -18,14 +18,38 @@
 .user-achievements__item {
   margin: 20px 0;
   position: relative;
+}
+
+.user-achievements__input:checked {
+  & + .user-achievements__label {
+    &::before {
+      content: "";
+      display: block;
+      width: 39px;
+      height: 39px;
+      background-image: url("../../img/icon_tick.svg"), url("../../img/icon_checkbox.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+
+.user-achievements__label {
+  font-size: 18px;
+  line-height: 30px;
+  display: flex;
+  padding-left: 20px;
 
   &::before {
     content: "";
     display: block;
+    width: 39px;
+    height: 39px;
     background-image: url("../../img/icon_checkbox.svg");
-    width: 35px;
-    height: 35px;
-    transform: translateY(90%);
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-right: 20px;
   }
 
   &:hover::before,
@@ -36,21 +60,4 @@
   &:active::before {
     background-image: url("../../img/icon_checkbox--active.svg");
   }
-}
-
-.user-achievements__input {
-  &:checked::after {
-    content: "";
-    position: absolute;
-    top: 61%;
-    left: 3%;
-    background-image: url("../../img/icon_tick.svg");
-    width: 22px;
-    height: 16px;
-  }
-}
-
-.user-achievements__label {
-  font-size: 18px;
-  line-height: 30px;
 }
