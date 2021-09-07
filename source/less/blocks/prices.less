@@ -2,6 +2,7 @@
   background-color: @light_grey;
   padding-top: -20px;
   margin-top: 60px;
+  overflow-x: hidden;
 
   @media (min-width: @tablet-width) {
     padding: 10px 0 70px;
@@ -38,7 +39,7 @@
   padding-top: 60px;
 
   @media (max-width: @mobile-width-only) {
-    transform: translateX(-280px);
+    position: relative;
   }
 
   @media (min-width: @desktop-width) {
@@ -50,6 +51,28 @@
   &:first-child {
     @media (max-width: @mobile-width-only) {
       display: none;
+    }
+  }
+
+  &:nth-child(2) {
+    @media (max-width: @mobile-width-only) {
+      transform: translateX(-282px);
+    }
+  }
+
+  &:nth-child(3) {
+    @media (max-width: @mobile-width-only) {
+      position: absolute;
+      top: 253px;
+      left: 50%;
+      margin-right: -50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  &:nth-child(4) {
+    @media (max-width: @mobile-width-only) {
+      transform: translateX(2px);
     }
   }
 }

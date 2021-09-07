@@ -1,18 +1,59 @@
-.contest__caption {
-  font-size: 24px;
-  line-height: 33px;
-  font-weight: 300;
-  color: @white;
-  padding: 90px 46px 45px;
-  margin: 0;
+.contest__wrapper {
   background-image: url("../../img/background_city.jpg");
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.contest__conditions {
+.contest__caption {
+  font-size: 24px;
+  line-height: 33px;
+  font-weight: 300;
+  color: @white;
+  padding: 90px 46px 45px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    font-size: 50px;
+    line-height: 68px;
+    padding: 191px 46px 74px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 184px 46px 104px;
+    max-width: 747px;
+  }
+}
+
+.contest__container {
   line-height: 30px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+    max-width: 550px;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 756px;
+  }
+}
+
+.contest__conditions {
   padding: 55px 20px 5px;
+  display: none;
+
+  @media (max-width: @mobile-width-only) {
+    display: block;
+  }
+}
+
+.contest__conditions-additional {
+  padding: 100px 20px 50px;
   margin: 0;
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
 }

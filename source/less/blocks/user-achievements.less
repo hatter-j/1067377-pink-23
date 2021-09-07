@@ -1,7 +1,19 @@
 .user-achievements {
   border: none;
-  padding: 0 22px 42;
+  padding: 0 22px 42px;
+  margin: 0;
   background-color: @light_grey;
+
+  @media (min-width: @tablet-width) {
+    background-color: @white;
+    order: 4;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 100%;
+    padding-left: 130px;
+    padding-right: 130px;
+  }
 }
 
 .user-achievements__legend {
@@ -9,15 +21,37 @@
   color: @pink;
   text-transform: uppercase;
   padding-top: 60px;
+
+  @media (min-width: @tablet-width) {
+    max-width: calc(100% - 180px);
+    background-color: @white;
+    padding: 14px 31px;
+    margin: 0;
+    transform: translateY(50%);
+  }
 }
 
 .user-achievements__list {
   .list-item-style();
+
+  @media (min-width: @tablet-width) {
+    padding: 54px 60px 0;
+    border: 2px solid @grey;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 .user-achievements__item {
   margin: 20px 0;
   position: relative;
+
+  @media (min-width: @desktop-width) {
+    text-align: left;
+  }
 }
 
 .user-achievements__input:checked {
@@ -34,12 +68,10 @@
   }
 }
 
-
 .user-achievements__label {
   font-size: 18px;
   line-height: 30px;
   display: flex;
-  padding-left: 20px;
 
   &::before {
     content: "";
@@ -49,7 +81,7 @@
     background-image: url("../../img/icon_checkbox.svg");
     background-position: center;
     background-repeat: no-repeat;
-    padding-right: 20px;
+    margin-right: 22px;
   }
 
   &:hover::before,

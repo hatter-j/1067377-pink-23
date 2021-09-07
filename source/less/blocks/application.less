@@ -1,8 +1,46 @@
+.application__container {
+  @media (min-width: @tablet-width) {
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 130px;
+  }
+}
+
+.application__form {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-direction: row;
+  }
+}
+
 .application__note {
   line-height: 30px;
   text-transform: uppercase;
 
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
   sup {
     color: @pink;
+  }
+
+  span {
+    margin: 0 5px;
+    display: none;
+
+    @media (min-width: @desktop-width) {
+      display: block;
+    }
   }
 }

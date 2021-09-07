@@ -1,6 +1,11 @@
 .photo-editor {
   padding: 40px 0 41px;
 
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
   img {
     width: 280px;
     height: 374px;
@@ -10,10 +15,15 @@
 }
 
 .photo-editor__caption {
+  font-size: 14px;
   line-height: 30px;
   font-weight: 400;
   padding: 0 20px 52px;
   margin: 0;
+
+  @media (min-width: @tablet-width) {
+    grid-column: ~"1 / -1";
+  }
 }
 
 .photo-editor__wrapper {
@@ -23,9 +33,23 @@
 
 .photo-editor__list {
   .list-item-style();
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  @media (min-width: @tablet-width) {
+    grid-column: ~"2 / -1";
+  }
 }
 
 .photo-editor__item {
+  &:nth-child(5),
+  &:nth-child(6) {
+    @media (max-width: @mobile-width-only) {
+      display: none;
+    }
+  }
+
   svg {
     color: rgba(@dark_grey, 0.3);
 
@@ -44,6 +68,10 @@
   background-color: @light_grey;
   padding: 38px 20px 41px;
   border-top: 1px solid rgba(@dark_grey, 0.1);
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+  }
 }
 
 .photo-editor__upload-button {
@@ -66,6 +94,14 @@
   &:active {
     color: rgba(@white, 0.3);
   }
+
+  @media (min-width: @tablet-width) {
+    width: 260px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 183px;
+  }
 }
 
 .photo-editor__cancel-button {
@@ -87,5 +123,13 @@
   &:active {
     color: rgba(@white, 0.3);
     background-color: rgba(@dark_grey, 0.3);
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 260px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 183px;
   }
 }
