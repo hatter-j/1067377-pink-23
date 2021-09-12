@@ -2,8 +2,9 @@
   padding: 40px 0 41px;
 
   @media (min-width: @tablet-width) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
   }
 
   img {
@@ -11,6 +12,11 @@
     height: 374px;
     object-fit: contain;
     background-color: @grey;
+
+    @media (min-width: @tablet-width) {
+      flex-basis: 100%;
+      width: 50%;
+    }
   }
 }
 
@@ -20,10 +26,6 @@
   font-weight: 400;
   padding: 0 20px 52px;
   margin: 0;
-
-  @media (min-width: @tablet-width) {
-    grid-column: ~"1 / -1";
-  }
 }
 
 .photo-editor__wrapper {
@@ -38,7 +40,7 @@
   justify-content: space-around;
 
   @media (min-width: @tablet-width) {
-    grid-column: ~"2 / -1";
+    width: 50%;
   }
 }
 
@@ -71,6 +73,7 @@
 
   @media (min-width: @desktop-width) {
     display: flex;
+    align-items: flex-start;
   }
 }
 
