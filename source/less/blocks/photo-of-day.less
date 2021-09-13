@@ -29,5 +29,43 @@
 }
 
 .photo-of-day__description {
+  background-color: @light_grey;
   margin: 0 20px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 130px;
+  }
+}
+
+.photo-of-day__text {
+  @media (min-width: @tablet-width) {
+    grid-column: ~"1 / -1";
+    max-width: 520px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-column: ~"1 / -1";
+    max-width: 874px;
+  }
+
+  br {
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
+  }
+}
+
+.photo-of-day__rating {
+  @media (min-width: @tablet-width) {
+    grid-column: ~"2 / -1";
+    grid-row: 1;
+    margin-left: auto;
+    margin-right: 30px;
+  }
 }

@@ -9,10 +9,32 @@
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
+
+  @media (min-width: @tablet-width) {
+    font-size: 50px;
+    line-height: 68px;
+    padding-top: 191px;
+    padding-bottom: 143px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 184px;
+    padding-bottom: 104px;
+  }
 }
 
 .photos__description {
   line-height: 30px;
   padding: 54px 35px 60px;
   margin: 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 572px;
+  }
 }

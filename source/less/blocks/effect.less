@@ -59,10 +59,20 @@
   @media (min-width: @desktop-width) {
     font-size: 18px;
     line-height: 30px;
-    max-width: 521px;
+    max-width: 535px;
   }
 
-  br {
+  br:nth-child(1) {
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
+
+    @media (min-width: @desktop-width) {
+      display: block;
+    }
+  }
+
+  br:nth-child(2) {
     @media (min-width: @desktop-width) {
       display: none;
     }
