@@ -1,17 +1,27 @@
 .social {
-  padding: 40px;
+  padding: 29px 0 30px;
+  margin-bottom: 15px;
+
+  @media (min-width: @tablet-width) {
+    padding: 17px 10px 15px 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 19px 4px 14px 12px;
+  }
 }
 
 .social__list {
   .list-item-style();
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .social__link {
   border: 3px solid rgba(@dark_grey, 0.1);
   border-radius: 50%;
   color: @pink;
+  margin: 0 4px;
 
   &:hover,
   &:focus {
@@ -24,15 +34,14 @@
   }
 }
 
-/*ПОДОГНАТЬ РАЗМЕРЫ*/
 .social__link--twitter {
-  padding: 17px;
+  padding: 14px 15px;
 }
 
 .social__link--facebook {
-  padding: 12px 17px;
+  padding: 14px 20px;
 }
 
 .social__link--youtube {
-  padding: 15px 17px;
+  padding: 14px 15px 14px 17px;
 }

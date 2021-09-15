@@ -1,33 +1,15 @@
 .prices {
   background-color: @light_grey;
-  padding-top: -20px;
-  margin-top: 60px;
+  padding-top: 22px;
   overflow-x: hidden;
 
   @media (min-width: @tablet-width) {
-    padding: 10px 0 70px;
+    padding: 0 0 70px;
+    margin-top: -24px;
   }
 
-  &::before {
-    content: "";
-    display: block;
-    background-image: url("../../img/background_polygon_2.svg");
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-size: 100% 100%;
-    //width: 100%;
-    height: 19px;
-    transform: translateY(-20px);
-
-    @media (min-width: @tablet-width) {
-      height: 40px;
-      transform: translateY(-50px);
-    }
-
-    @media (min-width: @desktop-width) {
-      height: 80px;
-      transform: translateY(-89px);
-    }
+  @media (min-width: @desktop-width) {
+    padding-bottom: 99px;
   }
 
   &__wrapper {
@@ -50,8 +32,12 @@
     width: 840px;
   }
 
+  @media (min-width: @tablet-width) {
+    padding-top: 58px;
+  }
+
   @media (min-width: @desktop-width) {
-    padding-top: 0;
+    padding-top: 58px;
   }
 }
 
@@ -59,14 +45,55 @@
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+  position: relative;
 
   @media (max-width: @mobile-width-only) {
-    min-width: 280px;
+    min-width: 279px;
   }
 
   &:first-child {
     @media (max-width: @mobile-width-only) {
       display: none;
+    }
+  }
+
+  &:nth-child(3)::before {
+    content: "";
+    position: absolute;
+    background-image: url("../../img/icon_hit_ribbon.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 74px;
+    height: 74px;
+
+    @media (min-width: @tablet-width) {
+      width: 61px;
+      height: 61px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 74px;
+      height: 74px;
+    }
+  }
+
+  &:nth-child(3)::after {
+    content: "Хит";
+    position: absolute;
+    top: 19px;
+    left: 13px;
+    color: @white;
+    text-transform: uppercase;
+    transform: rotate(-45deg);
+
+    @media (min-width: @tablet-width) {
+      top: 12px;
+      left: 7px;
+    }
+
+    @media (min-width: @desktop-width) {
+      top: 18px;
+      left: 14px;
     }
   }
 }
@@ -77,6 +104,14 @@
   flex-direction: column;
   flex-grow: 1;
   gap: 2px;
+
+  @media (min-width: @tablet-width) {
+    min-width: 153px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 233px;
+  }
 }
 
 .prices__column-item {
@@ -89,13 +124,18 @@
   font-weight: 300;
   color: @white;
   text-transform: uppercase;
-  padding: 19px 5px 16px;
+  padding: 12px 2px 26px;
   background-color: @dark_grey;
   display: flex;
   flex-direction: column;
 
+  @media (min-width: @tablet-width) {
+    padding-bottom: 7px;
+  }
+
   @media (min-width: @desktop-width) {
     font-size: 24px;
+    padding: 15px 2px 23px;
   }
 
   span {
@@ -111,7 +151,7 @@
 .prices__composition--mobile {
   text-transform: uppercase;
   text-align: left;
-  padding: 26px 5px 25px 0;
+  padding: 14px 5px 14px 0;
   margin: 0;
   display: none;
 
@@ -124,17 +164,21 @@
   text-align: left;
 
   @media (min-width: @tablet-width) {
-    padding: 18px 5px 17px 15px;
+    padding: 7px 17px;
   }
 
   @media (min-width: @desktop-width) {
     font-size: 18px;
-    padding: 23px 5px 23px 22px;
+    padding: 14px 5px 14px 22px;
   }
 
   &:first-child {
-    padding: 47px 0 48px;
+    padding: 39px 0 40px;
     background-color: transparent;
+
+    @media (min-width: @desktop-width) {
+      padding: 49px 0;
+    }
   }
 }
 
@@ -148,13 +192,32 @@
     justify-content: space-between;
     align-items: center;
   }
+
+  @media (min-width: @tablet-width) {
+    position: relative;
+  }
+
+  svg {
+    position: absolute;
+    left: 230px;
+
+    @media (min-width: @tablet-width) {
+      top: 9px;
+      left: 62px;
+    }
+
+    @media (min-width: @desktop-width) {
+      top: 16px;
+      left: 102px;
+    }
+  }
 }
 
 .prices__toggles {
-  padding: 40px 0;
+  padding: 43px 0 46px;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 
   @media (min-width: @tablet-width) {
     display: none;
