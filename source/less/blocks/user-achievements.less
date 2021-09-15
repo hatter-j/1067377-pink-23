@@ -1,10 +1,12 @@
 .user-achievements {
   border: none;
-  padding: 0 22px 42px;
+  padding: 39px 22px 0;
   margin: 0;
   background-color: @light_grey;
 
   @media (min-width: @tablet-width) {
+    padding-top: 0;
+    margin-top: -23px;
     background-color: @white;
     order: 4;
   }
@@ -13,45 +15,56 @@
     width: 100%;
     padding-left: 130px;
     padding-right: 130px;
+    margin-top: -5px;
   }
 }
 
 .user-achievements__legend {
+  font-size: 14px;
   line-height: 18px;
+  font-weight: 400;
   color: @pink;
   text-transform: uppercase;
-  padding-top: 60px;
+  max-width: 218px;
+  padding-bottom: 22px;
+  margin: 0 auto;
 
   @media (min-width: @tablet-width) {
-    max-width: calc(100% - 180px);
+    max-width: calc(100% - 240px);
     background-color: @white;
     padding: 14px 31px;
-    margin: 0;
-    transform: translateY(50%);
+    margin: 0 auto;
+    transform: translateY(24px);
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: calc(100% - 560px);
   }
 }
 
 .user-achievements__list {
   .list-item-style();
+  padding-top: 15px;
 
   @media (min-width: @tablet-width) {
-    padding: 54px 60px 0;
+    padding: 51px 58px 5px;
     border: 2px solid @grey;
   }
 
   @media (min-width: @desktop-width) {
     display: flex;
     flex-wrap: wrap;
+    padding-bottom: 12px;
   }
 }
 
 .user-achievements__item {
-  margin: 20px 0;
+  padding-bottom: 43px;
   position: relative;
 
   @media (min-width: @desktop-width) {
     text-align: left;
-    width: 33%;
+    width: 260px;
 
     &:nth-child(2) {
       order: 4;
@@ -93,6 +106,7 @@
   font-size: 18px;
   line-height: 30px;
   display: flex;
+  align-items: center;
 
   &::before {
     content: "";
@@ -102,7 +116,7 @@
     background-image: url("../../img/icon_checkbox.svg");
     background-position: center;
     background-repeat: no-repeat;
-    margin-right: 22px;
+    margin-right: 18px;
   }
 
   &:hover::before,

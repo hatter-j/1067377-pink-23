@@ -1,7 +1,7 @@
 .effect {
   text-align: left;
   background-color: @white;
-  padding: 102px 20px 138px 320px;
+  padding: 65px 20px 62px 330px;
   margin-top: -425px;
   position: relative;
   z-index: 2;
@@ -9,15 +9,14 @@
 
   @media (min-width: @desktop-width) {
     background-color: @light_grey;
-    padding-left: 500px;
-    padding-right: 166px;
+    padding: 65px 166px 112px 500px;
   }
 
   &::before {
     content: "";
     position: absolute;
-    top: 10%;
-    left: 5%;
+    top: 55px;
+    left: 20px;
     background-image: url("../../img/timer.svg");
     width: 238px;
     height: 276px;
@@ -26,6 +25,8 @@
     @media (min-width: @desktop-width) {
       width: 298px;
       height: 345px;
+      top: 35px;
+      left: 130px;
     }
   }
 
@@ -39,9 +40,11 @@
   line-height: 36px;
   font-weight: 700;
   color: @black;
+  margin-bottom: 12px;
 
   @media (min-width: @desktop-width) {
     line-height: 30px;
+    margin-bottom: 26px;
   }
 
   br {
@@ -52,14 +55,14 @@
 }
 
 .effect__description {
-  @media (min-width: @tablet-width) {
-    max-width: 305px;
-  }
+  max-width: 305px;
+  margin: 0 0 10px;
 
   @media (min-width: @desktop-width) {
     font-size: 18px;
     line-height: 30px;
     max-width: 535px;
+    margin-bottom: 30px;
   }
 
   br:nth-child(1) {

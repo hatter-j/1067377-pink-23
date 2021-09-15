@@ -1,11 +1,10 @@
 .user-description {
   text-align: left;
-  padding: 26px 5px 26px 17px;
+  padding: 18px 5px 6px 17px;
   margin-bottom: 20px;
 
   @media (min-width: @tablet-width) {
-    padding: 30px;
-    position: relative;
+    padding: 12px 5px 6px 30px;
   }
 }
 
@@ -20,17 +19,25 @@
   margin-right: 3px;
 }
 
+.user-description__text {
+  margin: 0;
+}
+
 .user-description__rating {
   display: flex;
   align-items: center;
-  position: absolute;
-  bottom: 0;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    bottom: 0;
+  }
 }
 
 .user-description__user-post-time {
   font-size: 12px;
   font-weight: 300;
   text-transform: uppercase;
+  margin: 0;
 }
 
 .user-description__likes-number {

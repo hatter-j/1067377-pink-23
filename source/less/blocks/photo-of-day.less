@@ -6,12 +6,21 @@
   width: 100%;
   height: 137px;
   display: flex;
+
+  @media (min-width: @tablet-width) {
+    height: 509px;
+  }
 }
 
 .photo-of-day__image {
   display: block;
   background-color: @grey;
   object-fit: contain;
+
+  @media (min-width: @tablet-width) {
+    width: 660px;
+    height: 509px;
+  }
 }
 
 .photo-of-day__button {
@@ -21,11 +30,16 @@
   font-weight: 700;
   color: @white;
   text-transform: uppercase;
-  padding: 13px;
+  padding: 6px 5px;
   background-color: @pink;
   position: absolute;
   top: 0;
-  right: 7%;
+  right: 20px;
+  min-width: 130px;
+
+  @media (min-width: @tablet-width) {
+    top: 57px;
+  }
 }
 
 .photo-of-day__description {
@@ -36,6 +50,7 @@
     padding: 0 30px;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin-bottom: 100px;
   }
 
   @media (min-width: @desktop-width) {
@@ -62,10 +77,19 @@
 }
 
 .photo-of-day__rating {
+  display: flex;
+  align-items: center;
+
   @media (min-width: @tablet-width) {
     grid-column: ~"2 / -1";
     grid-row: 1;
     margin-left: auto;
-    margin-right: 30px;
+    margin-right: 25px;
+  }
+
+  svg {
+    @media (min-width: @tablet-width) {
+      margin-left: 15px;
+    }
   }
 }

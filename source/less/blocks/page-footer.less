@@ -1,14 +1,17 @@
 .page-footer {
-  padding: 40px 0;
+  padding: 42px 0 30px;
 
   @media (min-width: @tablet-width) {
-    padding: 5px 0;
+    padding: 35px 0 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 68px 0 57px;
   }
 
   & .container {
     @media (min-width: @tablet-width) {
       display: flex;
-      align-items: baseline;
       justify-content: space-between;
     }
   }
@@ -18,6 +21,11 @@
   display: flex;
   justify-content: center;
   align-items: baseline;
+  margin-bottom: 25px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+  }
 
   &:active {
     opacity: 0.3;
