@@ -1,8 +1,11 @@
 .application__container {
+  padding: 20px 20px;
+
   @media (min-width: @tablet-width) {
-    padding: 0 20px;
     display: flex;
     justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 50px;
   }
 
   @media (min-width: @desktop-width) {
@@ -22,9 +25,24 @@
   }
 }
 
+.application__button {
+  padding: 16px 3px;
+  width: 280px;
+
+  @media (min-width: @tablet-width) {
+    width: 300px;
+  }
+}
+
 .application__note {
+  margin-top: 35px;
+  margin-bottom: -6px;
   line-height: 30px;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 17px;
+  }
 
   @media (min-width: @desktop-width) {
     display: flex;
@@ -33,6 +51,10 @@
 
   sup {
     color: @pink;
+
+    @media (min-width: @desktop-width) {
+      transform: translateY(19px);
+    }
   }
 
   span {

@@ -1,13 +1,12 @@
 .social {
-  padding: 29px 0 30px;
-  margin-bottom: 15px;
+  padding: 11px 0 10px;
 
   @media (min-width: @tablet-width) {
-    padding: 17px 10px 15px 0;
+    padding: 0 0 5px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 19px 4px 14px 12px;
+    padding: 5px 0 0 0;
   }
 }
 
@@ -15,6 +14,10 @@
   .list-item-style();
   display: flex;
   justify-content: center;
+
+  @media (min-width: @desktop-width) {
+    margin-left: 17px;
+  }
 }
 
 .social__link {
@@ -22,6 +25,19 @@
   border-radius: 50%;
   color: @pink;
   margin: 0 4px;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 10px 0 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 7px 0 0;
+  }
 
   &:hover,
   &:focus {
@@ -32,16 +48,4 @@
     border: 3px solid rgba(@dark_grey, 0.1);
     color: rgba(@pink, 0.3);
   }
-}
-
-.social__link--twitter {
-  padding: 14px 15px;
-}
-
-.social__link--facebook {
-  padding: 14px 20px;
-}
-
-.social__link--youtube {
-  padding: 14px 15px 14px 17px;
 }

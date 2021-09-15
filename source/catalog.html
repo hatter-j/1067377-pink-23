@@ -40,9 +40,9 @@
 
       <h1 class="visually-hidden">Фотографии пользовталей Пинк</h1>
 
-      <section class="photos__slogan">
-        <h2 class="photos__caption">Фотографии пользователей</h2>
-        <p class="photos__description">
+      <section class="photos-slogan">
+        <h2 class="photos-slogan__caption">Фотографии пользователей</h2>
+        <p class="photos-slogan__description">
           Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
         </p>
       </section>
@@ -62,7 +62,7 @@
             Прыгать или нет? Напишите в комментарии свой совет и<br>
             смотрите прямую трансляцию в перископе, задавайте свои вопросы!
           </p>
-          <div class="photo-of-day__rating user-description__rating">
+          <div class="photo-of-day__rating">
             <svg width="13" height="12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.469 12a.782.782 0 0 1-.58-.25C1.958 7.42 1.036 6.44.86 6.17A3.765 3.765 0 0 1 0 3.8a3.723 3.723 0 0 1 .63-2.045A3.921 3.921 0 0 1 2.3.355 4.09 4.09 0 0 1 4.487.035 4.031 4.031 0 0 1 6.51.9 4.08 4.08 0 0 1 9.07 0a4.013 4.013 0 0 1 2.78 1.117A3.733 3.733 0 0 1 13 3.8a3.409 3.409 0 0 1-.923 2.38l-5.038 5.56a.757.757 0 0 1-.57.25V12zM2.073 5.28c.218.26 2.56 2.84 4.396 4.86l4.478-4.94a1.96 1.96 0 0 0 .539-1.4c0-.618-.254-1.21-.707-1.648A2.461 2.461 0 0 0 9.07 1.47c-.38.003-.756.09-1.097.252-.341.163-.64.398-.873.688a.844.844 0 0 1-.612.28.757.757 0 0 1-.332-.082.729.729 0 0 1-.258-.218 2.43 2.43 0 0 0-.868-.682 2.49 2.49 0 0 0-2.372.132 2.369 2.369 0 0 0-.882.968 2.267 2.267 0 0 0 .296 2.462v.01z" fill="#D22856"/></svg>
             <p class="photo-of-day__likes-number user-description__likes-number">
               Нравится: 215
@@ -217,53 +217,52 @@
           Затмите их всех!<br>
           Выкладывайте все, что накопилось в телефоне!
         </h3>
-
-          <img src="img/user_img/winter_road.jpg" width="280" height="374" alt="Зимняя дорога">
-          <div class="photo-editor__cover">
+        <img src="img/user_img/winter_road.jpg" width="280" height="374" alt="Зимняя дорога">
+        <div class="photo-editor__cover">
           <div class="photo-editor__wrapper">
-          <ul class="photo-editor__list">
-            <li class="photo-editor__item">
-              <svg width="44" height="44" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M32 28h4V12a4 4 0 0 0-4-4H16v4h16v16zm-20 4V0H8v8H0v4h8v20a4 4 0 0 0 4 4h20v8h4v-8h8v-4H12z" fill="currentColor"/></svg>
-            </li>
-            <li class="photo-editor__item">
-              <svg width="48" height="43" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M33.12 17.88L15.24 0l-2.83 2.83 4.76 4.76L6.88 17.88a3 3 0 0 0 0 4.24l11 11a3 3 0 0 0 4.24 0l11-11a3 3 0 0 0 0-4.24zM10.41 20L20 10.42 29.59 20H10.41zM38 23s-4 4.33-4 7a4 4 0 1 0 8 0c0-2.67-4-7-4-7zM48 40H0v3h48v-3z" fill="currentColor"/></svg>
-            </li>
-            <li class="photo-editor__item">
-              <svg width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16 4a12 12 0 1 1 0 24 12 12 0 0 1 0-24zm0-4a16 16 0 1 0 0 32 16 16 0 0 0 0-32zM16 24.29a8.52 8.52 0 0 0 0-17" fill="currentColor"/></svg>
-            </li>
-            <li class="photo-editor__item">
-              <div class="photo-editor__filter range">
-                <div class="range__controls">
-                  <div class="range__scale"></div>
-                  <div class="range__toggle"></div>
+            <ul class="photo-editor__list">
+              <li class="photo-editor__item">
+                <svg width="44" height="44" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M32 28h4V12a4 4 0 0 0-4-4H16v4h16v16zm-20 4V0H8v8H0v4h8v20a4 4 0 0 0 4 4h20v8h4v-8h8v-4H12z" fill="currentColor"/></svg>
+              </li>
+              <li class="photo-editor__item">
+                <svg width="48" height="43" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M33.12 17.88L15.24 0l-2.83 2.83 4.76 4.76L6.88 17.88a3 3 0 0 0 0 4.24l11 11a3 3 0 0 0 4.24 0l11-11a3 3 0 0 0 0-4.24zM10.41 20L20 10.42 29.59 20H10.41zM38 23s-4 4.33-4 7a4 4 0 1 0 8 0c0-2.67-4-7-4-7zM48 40H0v3h48v-3z" fill="currentColor"/></svg>
+              </li>
+              <li class="photo-editor__item">
+                <svg width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16 4a12 12 0 1 1 0 24 12 12 0 0 1 0-24zm0-4a16 16 0 1 0 0 32 16 16 0 0 0 0-32zM16 24.29a8.52 8.52 0 0 0 0-17" fill="currentColor"/></svg>
+              </li>
+              <li class="photo-editor__item">
+                <div class="photo-editor__filter range">
+                  <div class="range__controls">
+                    <div class="range__scale"></div>
+                    <div class="range__toggle"></div>
                 </div>
-              </div>
-            </li>
-            <li class="photo-editor__item">
-              <div class="photo-editor__filter range">
-                <div class="range__controls">
-                  <div class="range__scale"></div>
-                  <div class="range__toggle"></div>
                 </div>
-              </div>
-            </li>
-            <li class="photo-editor__item">
-              <div class="photo-editor__filter range">
-                <div class="range__controls">
-                  <div class="range__scale"></div>
-                  <div class="range__toggle"></div>
+              </li>
+              <li class="photo-editor__item">
+                <div class="photo-editor__filter range">
+                  <div class="range__controls">
+                    <div class="range__scale"></div>
+                    <div class="range__toggle"></div>
+                  </div>
                 </div>
-              </div>
-            </li>
-          </ul>
+              </li>
+              <li class="photo-editor__item">
+                <div class="photo-editor__filter range">
+                  <div class="range__controls">
+                    <div class="range__scale"></div>
+                    <div class="range__toggle"></div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="photo-editor__container">
+            <form class="photo-editor__form" method="post" action="https://echo.htmlacademy.ru/">
+              <button class="photo-editor__upload-button" type="button">Запостить</button>
+            </form>
+            <button class="photo-editor__cancel-button" type="button">Отмена</button>
+          </div>
         </div>
-        <div class="photo-editor__container">
-          <form class="photo-editor__form" method="post" action="https://echo.htmlacademy.ru/">
-            <button class="photo-editor__upload-button" type="button">Запостить</button>
-          </form>
-          <button class="photo-editor__cancel-button" type="button">Отмена</button>
-        </div>
-      </div>
       </section>
     </main>
 

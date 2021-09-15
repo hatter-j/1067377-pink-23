@@ -1,53 +1,65 @@
 .user-app {
   border: none;
-  padding: 42px 22px;
+  padding: 39px 22px 7px;
   margin: 0;
   background-color: @light_grey;
 
   @media (min-width: @tablet-width) {
     order: 2;
     background-color: @white;
+    padding-top: 0;
+    margin-top: -34px;
   }
 
   @media (min-width: @desktop-width) {
-    width: 35%;
+    width: 37%;
     padding-right: 130px;
     padding-top: 32px;
-    margin-top: -60px;
+    margin-top: -50px;
+    margin-left: 20px;
   }
 }
 
 .user-app__legend {
+  font-size: 14px;
   line-height: 18px;
+  font-weight: 400;
   color: @pink;
   text-transform: uppercase;
-  padding-top: 60px;
+  max-width: 218px;
+  padding-bottom: 22px;
+  margin: 0 auto;
 
   @media (min-width: @tablet-width) {
-    max-width: calc(100% - 248px);
+    max-width: calc(100% - 295px);
     background-color: @white;
     padding: 14px 25px;
-    margin: 0;
-    transform: translateY(145%);
+    margin: 0 auto;
+    transform: translateY(25px);
   }
 
   @media (min-width: @desktop-width) {
-    max-width: calc(100% - 52px);
-    transform: translateY(125%);
+    max-width: calc(100% - 126px);
+    transform: translateY(25px);
   }
 }
 
 .user-app__list {
   .list-item-style();
+  padding-top: 11px;
 
   @media (min-width: @tablet-width) {
-    padding: 50px 60px 0;
+    padding: 52px 57px 17px;
     border: 2px solid @grey;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 52px 5px 17px 82px;
   }
 }
 
 .user-app__item {
-  margin: 20px 0;
+  padding-bottom: 34px;
   position: relative;
 }
 
@@ -88,7 +100,11 @@
     background-image: url("../../img/icon_radio_btn.svg");
     background-position: center;
     background-repeat: no-repeat;
-    margin-right: 22px;
+    margin-right: 26px;
+
+    @media (min-width: @tablet-width) {
+      margin-right: 19px;
+    }
   }
 
   &:hover::before,

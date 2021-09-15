@@ -1,16 +1,16 @@
 .user-emotions {
   border: none;
-  padding: 42px 22px 52px;
+  padding: 35px 22px 20px;
   margin: 0;
 
   @media (min-width: @tablet-width) {
+    padding-top: 30px;
     order: 5;
   }
 
   @media (min-width: @desktop-width) {
     width: 100%;
-    padding-left: 130px;
-    padding-right: 130px;
+    padding: 65px 130px 61px;
   }
 }
 
@@ -24,10 +24,9 @@
   line-height: 18px;
   color: @pink;
   text-transform: uppercase;
-  padding-top: 60px;
 
   @media (min-width: @tablet-width) {
-    max-width: calc(100% - 420px);
+    max-width: calc(100% - 424px);
     background-color: @white;
     padding: 14px 38px;
     transform: translateY(-50%);
@@ -36,7 +35,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    max-width: calc(100% - 676px);
+    max-width: calc(100% - 750px);
   }
 }
 
@@ -44,13 +43,20 @@
   font-size: 18px;
   line-height: 30px;
   color: @dark_grey;
-  padding: 20px;
+  padding: 12px 20px 5px;
   border: 2px solid @grey;
-  margin-top: 22px;
+  margin-top: 14px;
   box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
     width: calc(100% - 110px);
-    margin-bottom: 53px;
+    margin-top: 0;
+    margin-bottom: 40px;
+    padding-bottom: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 8px 22px 5px;
+    height: 124px;
   }
 }
