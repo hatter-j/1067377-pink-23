@@ -1,3 +1,40 @@
+.photos-slogan__wrapper {
+  background-image: url("../../img/background_city.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/background_city@2x.jpg");
+    background-size: 320px auto;
+  }
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../../img/background_city_tablet.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/background_city_tablet@2x.jpg");
+      background-size: 660px auto;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../../img/background_city_desktop.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/background_city_desktop@2x.jpg");
+      background-repeat: no-repeat;
+      background-size: 1200px auto;
+    }
+  }
+}
+
 .photos-slogan__caption {
   font-size: 24px;
   line-height: 33px;
@@ -5,10 +42,6 @@
   color: @white;
   padding: 93px 46px 78px;
   margin: 0;
-  background-image: url("../../img/background_city.jpg");
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: cover;
 
   @media (min-width: @tablet-width) {
     font-size: 50px;
@@ -18,8 +51,10 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding-top: 184px;
-    padding-bottom: 104px;
+    padding-top: 169px;
+    padding-bottom: 89px;
+    max-width: 357px;
+    margin: 0 auto;
   }
 }
 
@@ -36,6 +71,7 @@
   }
 
   @media (min-width: @desktop-width) {
+    padding: 92px 35px 88px;
     max-width: 572px;
   }
 }

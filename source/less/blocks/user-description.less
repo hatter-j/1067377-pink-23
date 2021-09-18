@@ -4,7 +4,13 @@
   margin-bottom: 20px;
 
   @media (min-width: @tablet-width) {
-    padding: 12px 5px 6px 30px;
+    min-height: 80px;
+    padding: 23px 5px 49px 30px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 24px 10px 49px 27px;
   }
 }
 
@@ -21,6 +27,10 @@
 
 .user-description__text {
   margin: 0;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 11px;
+  }
 }
 
 .user-description__rating {
@@ -29,7 +39,7 @@
 
   @media (min-width: @tablet-width) {
     position: absolute;
-    bottom: 0;
+    bottom: 23px;
   }
 }
 
@@ -49,6 +59,7 @@
   @media (min-width: @tablet-width) {
     order: -1;
     padding-left: 0;
-    margin-right: auto;
+    margin: 0;
+    min-width: 228px;
   }
 }

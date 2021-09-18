@@ -1,5 +1,11 @@
 .photo-of-day {
   position: relative;
+  text-align: left;
+  margin-bottom: 20px;
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 50px;
+  }
 }
 
 .photo-of-day__link {
@@ -10,16 +16,21 @@
   @media (min-width: @tablet-width) {
     height: 509px;
   }
-}
 
-.photo-of-day__image {
-  display: block;
-  background-color: @grey;
-  object-fit: contain;
+  img {
+    display: block;
+    background-color: @grey;
+    object-fit: contain;
 
-  @media (min-width: @tablet-width) {
-    width: 660px;
-    height: 509px;
+    @media (min-width: @tablet-width) {
+      width: 660px;
+      height: 509px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 1200px;
+      height: 506px;
+    }
   }
 }
 
@@ -30,6 +41,7 @@
   font-weight: 700;
   color: @white;
   text-transform: uppercase;
+  text-align: center;
   padding: 6px 5px;
   background-color: @pink;
   position: absolute;
@@ -40,25 +52,53 @@
   @media (min-width: @tablet-width) {
     top: 57px;
   }
+
+  @media (min-width: @desktop-width) {
+    top: 54px;
+    right: 130px;
+  }
+}
+
+.photo-of-day__info {
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+}
+
+.photo-of-day__user-name {
+  font-weight: 700;
+  margin-right: 3px;
+}
+
+.photo-of-day__user-post-time {
+  font-size: 12px;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin: 0;
 }
 
 .photo-of-day__description {
+  text-align: left;
   background-color: @light_grey;
+  padding: 18px 5px 6px 17px;
   margin: 0 20px;
 
   @media (min-width: @tablet-width) {
-    padding: 0 30px;
+    padding: 23px 30px 25px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
   }
 
   @media (min-width: @desktop-width) {
+    padding: 21px 28px 24px;
     margin: 0 130px;
   }
 }
 
 .photo-of-day__text {
+  margin: 0;
+
   @media (min-width: @tablet-width) {
     grid-column: ~"1 / -1";
     max-width: 520px;
@@ -84,12 +124,27 @@
     grid-column: ~"2 / -1";
     grid-row: 1;
     margin-left: auto;
-    margin-right: 25px;
   }
 
   svg {
     @media (min-width: @tablet-width) {
       margin-left: 15px;
+      order: 1;
     }
+
+    @media (min-width: @desktop-width) {
+      margin-left: 20px;
+    }
+  }
+}
+
+.photo-of-day__likes-number {
+  font-size: 12px;
+  color: @pink;
+  text-transform: uppercase;
+  padding-left: 18px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
   }
 }

@@ -2,15 +2,31 @@
   background-color: @dark_blue;
 
   @media (min-width: @tablet-width) {
-    background-image: url("../../img/background_phone.png"), url("../../img/background_city.jpg");
+    background-image: url("../../img/background_phone_tablet.png"), url("../../img/background_city_tablet.jpg");
     background-position: bottom right;
     background-repeat: no-repeat;
     background-size: auto, cover;
     padding-bottom: 82px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/background_phone_tablet@2x.png"), url("../../img/background_city_tablet@2x.jpg");
+      background-repeat: no-repeat;
+      background-size: 660px auto;
+    }
   }
 
   @media (min-width: @desktop-width) {
+    background-image: url("../../img/background_phone_desktop.png"), url("../../img/background_city_desktop.jpg");
+    background-position: bottom right 5px, center;
+    background-repeat: no-repeat;
+    background-size: auto, cover;
     padding-bottom: 91px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/background_phone_desktop@2x.png"), url("../../img/background_city_desktop@2x.jpg");
+      background-repeat: no-repeat;
+      background-size: 1050px, 1200px;
+    }
   }
 }
 
@@ -27,9 +43,16 @@
 .download-app__container {
   @media (max-width: @mobile-width-only) {
     background-image: url("../../img/background_phone.png"), url("../../img/background_city.jpg");
-    background-position: bottom, center;
+    background-position: 50% bottom;
     background-repeat: no-repeat;
     background-size: auto, cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/background_phone@2x.png"), url("../../img/background_city@2x.jpg");
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      background-size: 320px auto;
+    }
   }
 }
 
