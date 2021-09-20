@@ -9,8 +9,8 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding-top: 67px;
-    padding-bottom: 48px;
+    padding-top: 128px;
+    padding-bottom: 28px;
   }
 
   &::after {
@@ -18,32 +18,19 @@
     display: block;
     background-image: url("../../img/background_polygon_2.svg");
     background-repeat: no-repeat;
-    background-position: center top;
-    background-size: 100% 100%;
-    height: 18px;
+    background-position: center;
+    background-size: cover;
+    height: 17px;
     transform: translateY(9px);
 
     @media (min-width: @tablet-width) {
       height: 40px;
-      transform: translateY(-15px);
+      transform: translateY(-14px);
     }
 
     @media (min-width: @desktop-width) {
-      height: 100px;
-      transform: translateY(27px);
-    }
-  }
-
-  &::before {
-    @media (min-width: @desktop-width) {
-      content: "";
-      display: block;
-      background-image: url("../../img/icon_quotes.svg");
-      background-repeat: no-repeat;
-      background-position: center;
-      width: 79px;
-      height: 63px;
-      transform: translateX(562px) translateY(5px);
+      height: 120px;
+      transform: translateY(29px);
     }
   }
 }
@@ -54,6 +41,21 @@
 
 .reviews__list {
   .list-item-style();
+  position: relative;
+
+  &::before {
+    @media (min-width: @desktop-width) {
+      content: "";
+      position: absolute;
+      top: -94px;
+      left: 431px;
+      background-image: url("../../img/icons/icon_quotes.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 79px;
+      height: 63px;
+    }
+  }
 }
 
 .reviews__item {
@@ -62,7 +64,7 @@
 
     &::before {
       content: "";
-      background-image: url("../../img/icon_left_arrow.svg");
+      background-image: url("../../img/icons/icon_left_arrow.svg");
       background-repeat: no-repeat;
       background-position: center;
       width: 22px;
@@ -74,7 +76,7 @@
 
     &::after {
       content: "";
-      background-image: url("../../img/icon_left_arrow.svg");
+      background-image: url("../../img/icons/icon_left_arrow.svg");
       background-repeat: no-repeat;
       background-position: center;
       width: 22px;
@@ -89,12 +91,12 @@
     &:focus::before,
     &:hover::after,
     &:focus::after {
-      background-image: url("../../img/icon_left_arrow--hover.svg");
+      background-image: url("../../img/icons/icon_left_arrow--hover.svg");
     }
 
     &:active::before,
     &:active::after {
-      background-image: url("../../img/icon_left_arrow--active.svg");
+      background-image: url("../../img/icons/icon_left_arrow--active.svg");
     }
   }
 }

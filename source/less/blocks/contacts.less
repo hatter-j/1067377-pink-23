@@ -1,38 +1,12 @@
 .contacts__wrapper {
   padding: 41px 0 0;
-  margin-bottom: -28px;
 
   @media (min-width: @tablet-width) {
     padding-top: 45px;
-    margin-bottom: -59px;
   }
 
   @media (min-width: @desktop-width) {
     padding-top: 59px;
-    margin-bottom: -126px;
-  }
-
-  &::after {
-    content: "";
-    display: block;
-    background-image: url("../../img/background_triangle.svg");
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    width: 100%;
-    height: 100px;
-    z-index: 2;
-    transform: translateY(5px);
-
-    @media (min-width: @tablet-width) {
-      height: 190px;
-      transform: translateY(5px);
-    }
-
-    @media (min-width: @desktop-width) {
-      height: 250px;
-      transform: translateY(-45px);
-    }
   }
 }
 
@@ -40,7 +14,6 @@
   font-size: 24px;
   line-height: 29px;
   font-weight: 300;
-  padding: 0 20px;
   margin: 0 0 35px;
 
   @media (min-width: @tablet-width) {
@@ -59,21 +32,20 @@
 
 .contacts__list {
   .list-item-style();
-  padding: 0 20px;
-  margin-bottom: -40px;
   z-index: 1;
   position: relative;
+  padding-bottom: 33px;
 
   @media (min-width: @tablet-width) {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-bottom: -130px;
     padding-top: 15px;
   }
 
   @media (min-width: @desktop-width) {
     padding-top: 21px;
+    justify-content: space-around;
   }
 }
 
@@ -130,16 +102,42 @@
 }
 
 .contacts__map {
+  position: relative;
   background-color: @grey;
   height: 200px;
   width: 100%;
 
+  &::before {
+    content: "";
+    position: absolute;
+    top: -67px;
+    background-image: url("../../img/background_triangle.svg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100px;
+
+    @media (min-width: @tablet-width) {
+      height: 190px;
+      top: -125px;
+    }
+
+    @media (min-width: @desktop-width) {
+      background-image: url("../../img/background_triangle_desktop.svg");
+      height: 270px;
+      top: -95px;
+    }
+  }
+
   @media (min-width: @tablet-width) {
     height: 374px;
+    margin-top: -32px;
   }
 
   @media (min-width: @desktop-width) {
     height: 502px;
+    margin-top: -38px;
   }
 
   iframe {

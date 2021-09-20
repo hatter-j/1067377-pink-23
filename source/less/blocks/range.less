@@ -1,5 +1,23 @@
 .range {
-  padding: 34px 20px 34px;
+  padding: 10px;
+
+  @media (max-width: @mobile-width-only) {
+    display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 17px;
+  }
+}
+
+.range-mobile {
+  display: none;
+  padding: 10px 0 27px;
+  margin: 0 auto;
+
+  @media (max-width: @mobile-width-only) {
+    display: inline-block;
+  }
 }
 
 .range__controls {
@@ -10,6 +28,15 @@
   width: 240px;
   height: 2px;
   background-color: @dark_grey;
+
+  @media (min-width: @tablet-width) {
+    width: 202px;
+    margin-left: 17px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 288px;
+  }
 }
 
 .range__toggle {
@@ -24,5 +51,29 @@
 
   &:active {
     background-color: @pink;
+  }
+}
+
+.range__toggle--crop {
+  right: 24px;
+
+  @media (min-width: @desktop-width) {
+    right: 38px;
+  }
+}
+
+.range__toggle--fill {
+  right: 160px;
+
+  @media (min-width: @desktop-width) {
+    right: 240px;
+  }
+}
+
+.range__toggle--contrast {
+  right: 85px;
+
+  @media (min-width: @desktop-width) {
+    right: 135px;
   }
 }
